@@ -2,9 +2,12 @@
 :root {
   /* --- colors --- */
   --clr-white: hsl(90, 100%, 96%);
+  --clr-dark-white: hsl(0, 0%, 87%);
   --clr-primary: rgb(220, 214, 203);
-  --clr-accent: hsl(16, 89%, 54%);
+  --clr-accent: hsl(15, 100%, 59%);
+  --clr-dark-black: hsl(60, 3%, 7%);
   --clr-black: hsl(60, 4%, 11%);
+  --clr-gray: hsl(60, 2%, 37%);
 
   /* --- fontsizes --- */
   --fs-900: clamp(2.4883rem, -0.5749rem + 6.8072vi, 7.5938rem);
@@ -65,7 +68,7 @@ body {
   font-family: 'roundo', 'obvious', 'system-ui', '-apple-system', 'Roboto',
     'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--clr-black);
-  background-color: var(--clr-primary);
+  background-color: var(--clr-dark-black);
   font-size: 16px;
   font-display: swap;
   line-height: 1;
@@ -108,11 +111,20 @@ picutre {
 .white {
   color: var(--clr-white);
 }
+.dark-white {
+  color: var(--clr-dark-white);
+}
 .primary {
   color: var(--clr-primary);
 }
+.dark-black {
+  color: var(--clr-dark-black);
+}
 .black {
   color: var(--clr-black);
+}
+.gray {
+  color: var(--clr-gray);
 }
 .accent {
   color: var(--clr-accent);
@@ -160,7 +172,9 @@ p {
 .fs-300 {
   font-size: var(--fs-300);
 }
-
+.upper {
+  text-transform: uppercase;
+}
 /*--- font weights ---*/
 
 .italic {
@@ -223,6 +237,10 @@ p {
 .flex {
   display: flex;
 }
+.page-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 /*--- buttons ---*/
 
@@ -233,26 +251,25 @@ p {
   align-items: center;
   justify-content: center;
   padding: 1%;
-  height: 9.5rem;
-  width: 9.5rem;
+  height: 11rem;
+  width: 11rem;
 }
 
 .outer-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
-  width: 80%;
-  border: 2px solid var(--clr-accent);
+  height: 90%;
+  width: 90%;
+  border: 1px solid var(--clr-accent);
   border-radius: 100%;
   background-color: transparent;
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.1);
-  transition: 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .btn-link {
-  height: 85%;
-  width: 85%;
+  height: 84%;
+  width: 84%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -269,13 +286,14 @@ p {
 }
 
 .btn-text {
-  font-weight: bolder;
+  padding: 1.5rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: 'obvious' sans-serif;
 }
 
 /*--- standard btns --- */
+
 .b-btn {
   margin: 0 1rem;
   position: relative;
@@ -318,6 +336,8 @@ p {
   letter-spacing: 1px;
 }
 /*--- Links ---*/
+li.link,
+div.link,
 a.link {
   perspective: 1000px;
 
@@ -337,24 +357,27 @@ a.link {
     width: 100%;
     height: 100%;
     content: attr(data-hover);
+    color: black;
     transition: color 0.3s;
     transform: rotateX(-90deg);
     transform-origin: 50% 0;
     text-align: center;
   }
 
+
   &:hover span,
   &:focus span {
     transform: rotateX(90deg) translateY(-22px);
+    color: var(--clr-black);
   }
 
   &:hover span:before,
   &:focus span:before {
-    color: var(--clr-black);
+    color: var(--clr-dark-white);
   }
   &:hover .b-btn-text:before,
   &:focus .b-btn-text:before {
-    color: var(--clr-white);
+    color: var(--clr-black);
   }
 }
 
@@ -382,8 +405,6 @@ a.link {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-
 
 @media (max-width: 45em) {
   .grid-3 {

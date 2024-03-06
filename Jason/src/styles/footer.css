@@ -1,0 +1,147 @@
+/** @format */
+
+.f-container {
+  background-color: var(--clr-black);
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.f-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+}
+.grid-row {
+  padding: 3rem;
+  color: var(--clr-white);
+  display: grid;
+  justify-content: center;
+}
+
+.footer-top {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid var(--clr-gray);
+}
+.footer-p {
+  display: flex;
+  justify-content: center;
+}
+.quote {
+  margin-top: 1rem;
+  color: var(--clr-white);
+}
+.addres {
+  display: flex;
+  text-align: left;
+  padding-top: 2rem;
+}
+.top-quote {
+  width: 30ch;
+  color: var(--clr-white);
+}
+.links {
+  text-align: left;
+}
+.ul-2 {
+  padding-left: 1.6rem;
+}
+.link-items {
+  opacity: 0;
+  width: fit-content;
+  cursor: pointer;
+  animation: SlideInRight 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 100ms;
+}
+.li-2 {
+  animation: SlideInRight 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 200ms;
+}
+/*--- lines --- */
+.line-container {
+  display: flex;
+}
+.line {
+  height: 2rem;
+  width: 100%;
+}
+.line-1 {
+  width: 100%;
+  border-right: 1px solid var(--clr-gray);
+}
+
+/*--- Brand animation footer --- */
+.one {
+  opacity: 0;
+  transform: translateY(-60px);
+  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
+.two {
+  opacity: 0;
+  transform: translateY(-60px);
+  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 50ms;
+}
+.three {
+  opacity: 0;
+  transform: translateY(-60px);
+  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 100ms;
+}
+.four {
+  opacity: 0;
+  transform: translateY(-60px);
+  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 150ms;
+}
+.five {
+  opacity: 0;
+  transform: translateY(-60px);
+  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 200ms;
+}
+
+@keyframes Slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes SlideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  30% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media (max-width: 45em) {
+  .f-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-row {
+    padding: 1rem;
+  }
+  .link-items {
+    margin: 0 auto;
+  }
+  .top-quote {
+    width: 100%;
+  }
+  .ul-2 {
+    padding-left: 0rem;
+  }
+}

@@ -1,12 +1,10 @@
 /** @format */
-'use client';
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import React from 'react';
 
-export default function Megnet({ children }) {
+import gsap from 'gsap';
+import React, { useEffect, useRef } from 'react';
+
+export default function MegnetTwo({ children }) {
   const ref = useRef(null);
-
   useEffect(() => {
     if (
       !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -14,12 +12,10 @@ export default function Megnet({ children }) {
       )
     ) {
       const xTo = gsap.quickTo(ref.current, 'x', {
-        duration: 3,
-        ease: 'elastic.out(3, 2.8)',
+        duration: 0.5,
       });
       const yTo = gsap.quickTo(ref.current, 'y', {
-        duration: 3,
-        ease: 'elastic.out(3, 2.8)',
+        duration: 0.5,
       });
 
       const mouseMove = (e) => {
@@ -41,8 +37,8 @@ export default function Megnet({ children }) {
       ref.current.addEventListener('mouseleave', mouseLeave);
 
       return () => {
-        ref.current.removeEventListener('mousemove', mouseMove);
-        ref.current.removeEventListener('mouseleave', mouseLeave);
+        ref.current.addEventListener('mousemove', mouseMove);
+        ref.current.addEventListener('mouseleave', mouseLeave);
       };
     }
   }, []);

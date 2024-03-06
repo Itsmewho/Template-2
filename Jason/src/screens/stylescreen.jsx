@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Megnet from '../components/megnet';
+import MegnetTwo from '../components/megnetTwo';
 
 function Stylepage() {
   return (
@@ -49,13 +50,15 @@ function Stylepage() {
           <div className="stylePage flex">
             <Megnet>
               <div className="btn-container">
-                <Megnet>
-                  <div className="outer-btn">
+                <div className="outer-btn">
+                  <MegnetTwo>
                     <a className="btn-link">
-                      <span className="btn-text">Main</span>
+                      <MegnetTwo>
+                        <span className="btn-text">Main</span>
+                      </MegnetTwo>
                     </a>
-                  </div>
-                </Megnet>
+                  </MegnetTwo>
+                </div>
               </div>
             </Megnet>
 
