@@ -1,8 +1,8 @@
 /** @format */
 
 import React from 'react';
-import Megnet from '../components/megnet';
-import MegnetTwo from '../components/megnetTwo';
+import Megnet from '../components/Megnet';
+import MegnetTwo from '../components/MegnetTwo';
 
 function Stylepage() {
   return (

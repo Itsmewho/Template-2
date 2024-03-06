@@ -66,7 +66,7 @@ function Navigation() {
         </div>
       </div>
       <div className="page-wrapper">
-        <div className="nav-container p-mid white">
+        <div className="nav-container white">
           <div className="brand fs-500 ff-serif l-2 underline-r">
             <span>JASON</span>
           </div>

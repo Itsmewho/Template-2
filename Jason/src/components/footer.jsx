@@ -1,7 +1,7 @@
 /** @format */
 import '../styles/footer.css';
-import Megnet from './megnet';
-import MegnetTwo from './megnetTwo';
+import Megnet from './Megnet';
+import MegnetTwo from './MegnetTwo';
 
 function Footer() {
   return (

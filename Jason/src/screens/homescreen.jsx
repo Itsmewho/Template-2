@@ -1,9 +1,9 @@
 /** @format */
 
 import React from 'react';
-import Footer from '../components/footer';
-import Navigation from '../components/navigation';
-import Hero from '../components/hero';
+import Footer from '../components/Footer';
+import Navigation from '../components/Navigation';
+import Hero from '../components/Hero';
 
 function Homescreen() {
   return (
