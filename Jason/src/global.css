@@ -240,6 +240,7 @@ p {
 .page-wrapper {
   max-width: 1920px;
   margin: 0 auto;
+  color: var(--clr-white);
 }
 
 /*--- buttons ---*/
@@ -316,6 +317,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   width: fit-content;
   height: fit-content;
   padding: 1rem 2rem;
@@ -364,20 +366,19 @@ a.link {
     text-align: center;
   }
 
-
   &:hover span,
   &:focus span {
     transform: rotateX(90deg) translateY(-22px);
-    color: var(--clr-black);
+    color: var(--clr-white);
   }
 
   &:hover span:before,
   &:focus span:before {
-    color: var(--clr-dark-white);
+    color: var(--clr-black);
   }
   &:hover .b-btn-text:before,
   &:focus .b-btn-text:before {
-    color: var(--clr-black);
+    color: var(--clr-white);
   }
 }
 
