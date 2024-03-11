@@ -6,6 +6,7 @@
   padding: 1rem 2rem;
   position: relative;
   justify-content: space-between;
+  background-color: var(--clr-dark-black);
 }
 .brand {
   opacity: 0;
@@ -134,82 +135,5 @@
   transition: 300ms;
   &:hover {
     color: var(--clr-accent);
-  }
-}
-@keyframes close {
-  0% {
-    display: block;
-    opacity: 1;
-    z-index: 1;
-    width: 100vw;
-  }
-  99% {
-    opacity: 1;
-    z-index: 1;
-  }
-  100% {
-    opacity: 0;
-    width: 0vw;
-    display: none;
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    width: 0vw;
-  }
-  100% {
-    width: 100vw;
-  }
-}
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes SlideFade {
-  0% {
-    transform: translateX(-80vw);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes SlideFadeOut {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    transform: translateX(-50vw);
-    opacity: 0;
-  }
-}
-@keyframes fadeInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-25px);
-  }
-  30% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
   }
 }

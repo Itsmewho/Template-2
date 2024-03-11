@@ -7,9 +7,9 @@ function Footer() {
   return (
     <div className="f-container">
       <div className="footer-top">
-        <div className="quote p-big ff-serif letter-b fs-500">
+        <h1 className="quote p-big ff-serif letter-b fs-500">
           Transform Your Body!
-        </div>
+        </h1>
         <div className="footer-p">
           <p className="top-quote ff-sans l-1 letter-s fs-600 fw-100">
             Unleash Your Passion! with our premium and expert guidance. Embrace
