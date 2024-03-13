@@ -3,9 +3,7 @@
 import React from 'react';
 import '../styles/categories.css';
 
-
 function Categories() {
-
   return (
     <>
       <div className="page-wrapper">
@@ -13,19 +11,27 @@ function Categories() {
           <div
             className="cat-wrapper ff-sans fs-500"
             data-scroll
-            offset="200px"
-            data-scroll-speed="0.4">
+            data-scroll-speed="0.4"
+            id="cat-wrapper">
             <div className="lifestyle">
               <h2 className="cat-top ff-serif l-2 letter-b underline-r fw-100">
                 Lifestyle
               </h2>
-              <div className="cat-mid ">
+              <div
+                className="cat-mid"
+                data-scroll
+                data-scroll-class="animate"
+                data-scroll-repeat="true">
                 Take <span className="accent">charge</span> of your{' '}
                 <span className="accent">well-being</span> with us! Explore
                 expert tips on health and living. break boundaries, and create a
                 life of health and happiness.
               </div>
-              <div className="cat-bottom fs-400">
+              <div
+                className="cat-bottom fs-400"
+                data-scroll
+                data-scroll-class="animate"
+                data-scroll-repeat="true">
                 <a className="l-btn link">
                   <span className="l-btn-text" data-hover="lifestyle">
                     Read more
@@ -37,7 +43,11 @@ function Categories() {
               <h3 className="cat-top ff-serif l-2 letter-m underline-r fw-100">
                 Nutrition
               </h3>
-              <div className="cat-mid">
+              <div
+                className="cat-mid"
+                data-scroll
+                data-scroll-class="animate"
+                data-scroll-repeat="true">
                 <span className="accent">Balance </span>
                 is key! Enjoy a variety of foods. With a array of fruits,
                 vegetables, proteins, and whole grains. A diverse approach
@@ -45,7 +55,11 @@ function Categories() {
                 <span className="accent">essential nutrients</span> for overall
                 health and well-being."
               </div>
-              <div className="cat-bottom">
+              <div
+                className="cat-bottom fs-400"
+                data-scroll
+                data-scroll-class="animate"
+                data-scroll-repeat="true">
                 <a className="l-btn link fs-400">
                   <span className="l-btn-text" data-hover="nutrition">
                     Read more
@@ -57,7 +71,11 @@ function Categories() {
               <h4 className="cat-top ff-serif l-2 letter-m underline-r fw-100">
                 Fitness
               </h4>
-              <div className="cat-mid">
+              <div
+                className="cat-mid"
+                data-scroll
+                data-scroll-class="animate"
+                data-scroll-repeat="true">
                 "Consistency is key! Make{' '}
                 <span className="accent">exercise </span>a regular part of your
                 routine to reap the full benefits. Choose activities you{' '}
@@ -65,7 +83,11 @@ function Categories() {
                 <span className="accent"> motivated</span> and engaged. Whether
                 it's a brisk walk or a HIIT workout
               </div>
-              <div className="cat-bottom">
+              <div
+                className="cat-bottom fs-400"
+                data-scroll
+                data-scroll-class="animate"
+                data-scroll-repeat="true">
                 <a className="l-btn link fs-400">
                   <span className="l-btn-text" data-hover="fitness">
                     Read more

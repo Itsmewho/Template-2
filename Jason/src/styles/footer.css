@@ -19,12 +19,14 @@
 }
 
 .footer-top {
+  opacity: 0;
   display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-bottom: 6rem;
   border-bottom: 1px solid var(--clr-gray);
+  transition: opacity 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .footer-p {
   display: flex;
@@ -44,22 +46,17 @@
   color: var(--clr-white);
 }
 .links {
+  opacity: 0;
   text-align: left;
 }
 .ul-2 {
   padding-left: 1.6rem;
 }
 .link-items {
-  opacity: 0;
   width: fit-content;
   cursor: pointer;
-  animation: SlideInRight 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  animation-delay: 100ms;
 }
-.li-2 {
-  animation: SlideInRight 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  animation-delay: 200ms;
-}
+
 /*--- lines --- */
 .line-container {
   display: flex;
@@ -77,31 +74,22 @@
 .one {
   opacity: 0;
   transform: translateY(-60px);
-  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
 }
 .two {
   opacity: 0;
   transform: translateY(-60px);
-  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  animation-delay: 50ms;
 }
 .three {
   opacity: 0;
   transform: translateY(-60px);
-  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  animation-delay: 100ms;
 }
 .four {
   opacity: 0;
   transform: translateY(-60px);
-  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  animation-delay: 150ms;
 }
 .five {
   opacity: 0;
   transform: translateY(-60px);
-  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  animation-delay: 200ms;
 }
 
 @media (max-width: 45em) {

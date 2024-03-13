@@ -221,15 +221,7 @@ p {
   padding: 1rem;
   border: 1px solid var(--clr-black);
 }
-.p-small {
-  padding: 0.5rem;
-}
-.p-mid {
-  padding: 1rem;
-}
-.p-big {
-  padding: 1.8rem;
-}
+
 .letter-s {
   letter-spacing: 1px;
 }

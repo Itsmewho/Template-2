@@ -1,9 +1,9 @@
 /** @format */
-
-import React from 'react';
 import Marque from './Marque';
+import MarqueTwo from './MarqueTwo';
 import Megnet from './Megnet';
 import MegnetTwo from './MegnetTwo';
+
 import '../styles/gallery.css';
 
 function Gallery() {
@@ -11,17 +11,30 @@ function Gallery() {
     <>
       <div className="page-wrapper">
         <section>
-          <div className="gallery-wrapper" data-scroll-offset="-9500">
+          <div className="gallery-wrapper">
             <Marque></Marque>
             <div className="gallery-intro-grid" id="stick" data-scroll-section>
-              <div className="gallery-intro-text">
+              <div className="gallery-intro-images">
+                <div className="plane">
+                  <img src="./" alt="" />
+                </div>
+                <div className="plane1"></div>
+                <div className="plane2"></div>
+              </div>
+              <div
+                className="gallery-intro-text"
+                data-scroll
+                data-scroll-offset="100px"
+                data-scroll-class="animate"
+                data-scroll-repeat="true">
                 <div
                   className="gallery-text-container"
                   data-scroll-sticky
-                  data-scroll-target="#stick">
-                  <h1 className="ff-serif fs-600 letter-m">
-                    Do what excites! Transform your life.
-                  </h1>
+                  data-scroll-target="#stick"
+                  data-scroll
+                  data-scroll-offset="0,100%"
+                  data-scroll-event-progress="progressEvent">
+                  <h1 className="ff-serif fs-600 letter-m">Do what excites!</h1>
                   <div className="gallery-btn">
                     <Megnet>
                       <div className="btn-container">
@@ -41,7 +54,7 @@ function Gallery() {
               </div>
               <div className="gallery-intro-images"></div>
             </div>
-            <Marque></Marque>
+            <MarqueTwo></MarqueTwo>
           </div>
         </section>
       </div>
