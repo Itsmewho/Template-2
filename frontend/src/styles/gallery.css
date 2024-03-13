@@ -1,8 +1,85 @@
+/** @format */
 
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 290vh;
+}
+.plane {
+  position: absolute;
+  width: 100%;
+  height: 290vh;
+  transition: 200ms;
+}
+.plane picture {
+  aspect-ratio: 3/2;
+  height: 300px;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+.plane picture:nth-child(1) {
+  top: 40%;
+  left: 13%;
+}
+.plane picture:nth-child(2) {
+  top: 6%;
+  left: 9%;
+}
+.plane1 {
+  position: absolute;
+  margin: 1%;
+  width: 98%;
+  height: 285vh;
+  transition: 200ms;
+}
+.plane1 picture {
+  aspect-ratio: 3/2;
+  height: 300px;
+  position: absolute;
+  top: 10%;
+  left: 69%;
+}
+.plane1 picture:nth-child(1) {
+  top: 65%;
+  left: 26%;
+}
+.plane1 picture:nth-child(2) {
+  top: 80%;
+  left: 67%;
+}
 
-.gallery-wrapper {
-  transform: translateY(-150px);
-  background-color: var(--clr-black);
+.plane2 {
+  position: absolute;
+  margin: 2%;
+  width: 96%;
+  height: 280vh;
+  transition: 200ms;
+}
+
+.plane2 picture {
+  aspect-ratio: 3/2;
+  height: 300px;
+  position: absolute;
+  top: 58%;
+  left: 70%;
+}
+.plane2 picture:nth-child(1) {
+  top: 23%;
+  left: 38%;
+}
+.plane2 picture:nth-child(2) {
+  top: 36%;
+  left: 62%;
+}
+
+/* --- sticky element --- */
+.grid-fixed {
+  position: absolute;
+  z-index: 3;
+  margin: 4%;
+  width: 92%;
+  height: 100%;
 }
 .gallery-intro-grid {
   position: relative;
@@ -12,38 +89,31 @@
 .gallery-intro-text {
   opacity: 0;
   padding-top: 3rem;
-  height: 100%;
-  transition: opacity 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 1000ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .gallery-text-container {
   position: sticky;
   display: grid;
   justify-content: center;
+  z-index: 5;
   text-align: center;
   padding: 1rem;
   margin-bottom: 12rem;
   width: 100%;
   top: 450px;
-  border: 1px solid red;
   border-radius: 25% 25% 80% 80%;
 }
-
-.gallery-intro-images {
-  overflow: hidden;
-  height: 300vh;
-}
-.gallery-text-p {
-  width: 30ch;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-top: 2rem;
+.gallery-text-container h1{
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 .gallery-btn {
   display: flex;
   justify-content: center;
   padding: 3rem;
+}
+.filler {
+  height: 280vh;
 }
 
 @media (max-width: 62.5em) {

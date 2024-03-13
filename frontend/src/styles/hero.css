@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  background-image: url(/public/images/desktop.webp);
+  background-image: url(/images/desktop.webp);
   background-position: left top;
   height: 70vh;
   border-radius: 10px 10px 0 0;
@@ -57,16 +57,14 @@
   .hero-wrapper {
     display: flex;
     flex-direction: column;
-    background-image: url(/public/images/mobile.jpg);
+    background-image: url(/images/mobile.jpg);
     background-position: left bottom;
   }
   .hero-text {
     text-align: center;
-    margin: 0 auto;
+    padding: 0;
+    margin: 5rem auto;
     max-width: 75%;
     font-size: var(--fs-900);
-  }
-  .hero-text {
-    padding: 0;
   }
 }

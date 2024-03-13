@@ -20,7 +20,7 @@ function Navigation() {
             </h1>
           </div>
           <div className="nav-center">
-            <ol className="nav-list fs-serif letter-b fs-700 dark-white">
+            <ol className="nav-list fs-serif letter-b fs-800 dark-white">
               <li
                 className={
                   isActive
