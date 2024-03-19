@@ -102,13 +102,11 @@ function Gallery() {
               <div className="plane" ref={plane}>
                 <picture>
                   <source
-                    rel="preload"
                     as="image"
                     srcSet={jumping}
                     media="(min-width: 1250px)"
                   />
                   <img
-                    rel="preload"
                     as="image"
                     src={danser2}
                     alt="JMT-Creations standing by a waterfall in the mountains"
@@ -116,13 +114,11 @@ function Gallery() {
                 </picture>
                 <picture className="hero-image">
                   <source
-                    rel="preload"
                     as="image"
                     srcSet={danser2}
                     media="(min-width: 1250px)"
                   />
                   <img
-                    rel="preload"
                     as="image"
                     src={danser}
                     alt="JMT-Creations standing by a waterfall in the mountains"
@@ -130,13 +126,11 @@ function Gallery() {
                 </picture>
                 <picture className="hero-image">
                   <source
-                    rel="preload"
                     as="image"
                     srcSet={dude}
                     media="(min-width: 1250px)"
                   />
                   <img
-                    rel="preload"
                     as="image"
                     src={danser}
                     alt="JMT-Creations standing by a waterfall in the mountains"
@@ -146,13 +140,11 @@ function Gallery() {
               <div className="plane1" ref={plane1}>
                 <picture>
                   <source
-                    rel="preload"
                     as="image"
                     srcSet={reading}
                     media="(min-width: 1250px)"
                   />
                   <img
-                    rel="preload"
                     as="image"
                     src={danser2}
                     alt="JMT-Creations standing by a waterfall in the mountains"
@@ -160,13 +152,11 @@ function Gallery() {
                 </picture>
                 <picture className="hero-image">
                   <source
-                    rel="preload"
                     as="image"
                     srcSet={girlwater}
                     media="(min-width: 1250px)"
                   />
                   <img
-                    rel="preload"
                     as="image"
                     src={danser}
                     alt="JMT-Creations standing by a waterfall in the mountains"
@@ -174,13 +164,11 @@ function Gallery() {
                 </picture>
                 <picture className="hero-image">
                   <source
-                    rel="preload"
                     as="image"
                     srcSet={plasic2}
                     media="(min-width: 1250px)"
                   />
                   <img
-                    rel="preload"
                     as="image"
                     src={danser}
                     alt="JMT-Creations standing by a waterfall in the mountains"
@@ -190,13 +178,11 @@ function Gallery() {
               <div className="plane2" ref={plane2}>
                 <picture>
                   <source
-                    rel="preload"
                     as="image"
                     srcSet={danser}
                     media="(min-width: 1250px)"
                   />
                   <img
-                    rel="preload"
                     as="image"
                     src={danser2}
                     alt="JMT-Creations standing by a waterfall in the mountains"
@@ -204,13 +190,11 @@ function Gallery() {
                 </picture>
                 <picture className="hero-image">
                   <source
-                    rel="preload"
                     as="image"
                     srcSet={danser2}
                     media="(min-width: 1250px)"
                   />
                   <img
-                    rel="preload"
                     as="image"
                     src={danser}
                     alt="JMT-Creations standing by a waterfall in the mountains"
@@ -218,13 +202,11 @@ function Gallery() {
                 </picture>
                 <picture className="hero-image">
                   <source
-                    rel="preload"
                     as="image"
                     srcSet={plasic}
                     media="(min-width: 1250px)"
                   />
                   <img
-                    rel="preload"
                     as="image"
                     src={danser}
                     alt="JMT-Creations standing by a waterfall in the mountains"

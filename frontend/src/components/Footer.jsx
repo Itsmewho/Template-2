@@ -49,35 +49,40 @@ function Footer() {
               className="one"
               data-scroll
               data-scroll-class="a-one"
-              data-scroll-repeat="true">
+              data-scroll-repeat="true"
+              data-scroll-offset="120px">
               J
             </div>
             <div
               className="two"
               data-scroll
               data-scroll-class="a-two"
-              data-scroll-repeat="true">
+              data-scroll-repeat="true"
+              data-scroll-offset="120px">
               A
             </div>
             <div
               className="three"
               data-scroll
               data-scroll-class="a-three"
-              data-scroll-repeat="true">
+              data-scroll-repeat="true"
+              data-scroll-offset="120px">
               S
             </div>
             <div
               className="four"
               data-scroll
               data-scroll-class="a-four"
-              data-scroll-repeat="true">
+              data-scroll-repeat="true"
+              data-scroll-offset="120px">
               O
             </div>
             <div
               className="five"
               data-scroll
               data-scroll-class="a-five"
-              data-scroll-repeat="true">
+              data-scroll-repeat="true"
+              data-scroll-offset="120px">
               N
             </div>
           </a>

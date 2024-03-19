@@ -40,7 +40,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 4rem;
-  background-color: var(--clr-black);
   max-width: 1920px;
   margin: 0 auto;
 }
