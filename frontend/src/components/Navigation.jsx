@@ -1,6 +1,7 @@
 /** @format */
 import '../styles/header.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
   const [isActive, setActive] = useState(true);
@@ -27,7 +28,9 @@ function Navigation() {
                     ? 'nav-links-close underline-r l-1'
                     : 'nav-links underline-r l-1'
                 }>
-               My Story
+                <Link to="/about">
+                  <span className="white">My Story</span>
+                </Link>
               </li>
               <li
                 className={
@@ -35,7 +38,9 @@ function Navigation() {
                     ? 'nav-links-close underline-r l-1'
                     : 'nav-links underline-r l-1'
                 }>
-                Gallery
+                <Link to="/gallery">
+                  <span className="white">Gallery</span>
+                </Link>
               </li>
               <li
                 className={
@@ -43,7 +48,9 @@ function Navigation() {
                     ? 'nav-links-close underline-r l-1'
                     : 'nav-links underline-r l-1'
                 }>
-                Articles
+                <Link to="/articles">
+                  <span className="white">Articles</span>
+                </Link>
               </li>
               <li
                 className={
@@ -51,7 +58,9 @@ function Navigation() {
                     ? 'nav-links-close underline-r l-1'
                     : 'nav-links underline-r l-1'
                 }>
-                Shop
+                <Link to="/shop">
+                  <span className="white">Shop</span>
+                </Link>
               </li>
               <li
                 className={
@@ -59,7 +68,9 @@ function Navigation() {
                     ? 'nav-links-close underline-r l-1'
                     : 'nav-links underline-r l-1'
                 }>
-                Contact
+                <Link to="/contact">
+                  <span className="white">Contact</span>
+                </Link>
               </li>
             </ol>
           </div>
@@ -68,7 +79,9 @@ function Navigation() {
       <div className="page-wrapper">
         <div className="nav-container white">
           <div className="brand fs-500 ff-serif l-2 underline-r">
-            <span>JASON</span>
+            <Link to="/">
+              <span className="white">JASON</span>
+            </Link>
           </div>
           <div className="menu fs-500 letter-m underline-r l-2">
             <span className="menu" onClick={navToggle}>

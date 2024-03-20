@@ -30,7 +30,7 @@ function Categories() {
               <div
                 className="cat-bottom fs-400"
                 data-scroll
-                data-scroll-class="animate"
+                data-scroll-class="animate2"
                 data-scroll-repeat="true">
                 <a className="l-btn link">
                   <span className="l-btn-text" data-hover="lifestyle">
@@ -58,7 +58,7 @@ function Categories() {
               <div
                 className="cat-bottom fs-400"
                 data-scroll
-                data-scroll-class="animate"
+                data-scroll-class="animate2"
                 data-scroll-repeat="true">
                 <a className="l-btn link fs-400">
                   <span className="l-btn-text" data-hover="nutrition">
@@ -86,7 +86,7 @@ function Categories() {
               <div
                 className="cat-bottom fs-400"
                 data-scroll
-                data-scroll-class="animate"
+                data-scroll-class="animate2"
                 data-scroll-repeat="true">
                 <a className="l-btn link fs-400">
                   <span className="l-btn-text" data-hover="fitness">

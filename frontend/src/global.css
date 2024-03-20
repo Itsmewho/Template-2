@@ -33,21 +33,6 @@
   src: url(/font/roundo.woff2) format('woff2');
 }
 
-/* --- Will check in the end if it fits --- */
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
 html {
   color-scheme: dark light;
   hanging-punctuation: first last;

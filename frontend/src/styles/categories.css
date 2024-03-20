@@ -18,8 +18,10 @@
   animation: fadeIn 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 .nutrition {
+  opacity: 0;
   padding: 2rem;
   grid-area: 1 / 2 / 2 / 3;
+  animation: fadeIn 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 
 .training {
@@ -51,12 +53,12 @@
   opacity: 1;
 }
 .cat-bottom {
-  opacity: 0;
+  opacity: 1;
   bottom: 0;
   display: flex;
   justify-content: center;
   padding-top: 2rem;
-  transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 
 .line-cat {

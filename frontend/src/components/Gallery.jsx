@@ -223,7 +223,7 @@ function Gallery() {
                     className="gallery-intro-text"
                     data-scroll
                     data-scroll-offset="100px"
-                    data-scroll-class="animate"
+                    data-scroll-class="animate2"
                     data-scroll-repeat="true">
                     <div
                       className="gallery-text-container"

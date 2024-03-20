@@ -1,5 +1,4 @@
 /** @format */
-import { useState } from 'react';
 import React from 'react';
 import '../styles/testimonials.css';
 import products from '../testimonials.js';
