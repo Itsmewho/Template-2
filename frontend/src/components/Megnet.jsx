@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import React from 'react';
 
 export default function Megnet({ children }) {
-  const ref = useRef(null);
+  const ref = useRef();
 
   useEffect(() => {
     if (

@@ -7,6 +7,7 @@ function Navigation() {
   const [isActive, setActive] = useState(true);
   const navToggle = () => {
     setActive(!isActive);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -22,67 +23,72 @@ function Navigation() {
           </div>
           <div className="nav-center">
             <ol className="nav-list fs-serif letter-b fs-800 dark-white">
-              <li
-                className={
-                  isActive
-                    ? 'nav-links-close underline-r l-1'
-                    : 'nav-links underline-r l-1'
-                }>
-                <Link to="/about">
+              <Link to="/About">
+                <li
+                  onClick={navToggle}
+                  className={
+                    isActive
+                      ? 'nav-links-close underline-r l-1'
+                      : 'nav-links underline-r l-1'
+                  }>
                   <span className="white">My Story</span>
-                </Link>
-              </li>
+                </li>
+              </Link>
               <li
+                onClick={navToggle}
                 className={
                   isActive
                     ? 'nav-links-close underline-r l-1'
                     : 'nav-links underline-r l-1'
                 }>
-                <Link to="/gallery">
+                <Link to="/Gallery">
                   <span className="white">Gallery</span>
                 </Link>
               </li>
               <li
+                onClick={navToggle}
                 className={
                   isActive
                     ? 'nav-links-close underline-r l-1'
                     : 'nav-links underline-r l-1'
                 }>
-                <Link to="/articles">
+                <Link to="/Articles">
                   <span className="white">Articles</span>
                 </Link>
               </li>
               <li
+                onClick={navToggle}
                 className={
                   isActive
                     ? 'nav-links-close underline-r l-1'
                     : 'nav-links underline-r l-1'
                 }>
-                <Link to="/shop">
+                <Link to="/Shop">
                   <span className="white">Shop</span>
                 </Link>
               </li>
-              <li
-                className={
-                  isActive
-                    ? 'nav-links-close underline-r l-1'
-                    : 'nav-links underline-r l-1'
-                }>
-                <Link to="/contact">
+              <Link to="/Contact">
+                <li
+                  onClick={navToggle}
+                  className={
+                    isActive
+                      ? 'nav-links-close underline-r l-1'
+                      : 'nav-links underline-r l-1'
+                  }>
                   <span className="white">Contact</span>
-                </Link>
-              </li>
+                </li>
+              </Link>
             </ol>
           </div>
         </div>
       </div>
       <div className="page-wrapper">
         <div className="nav-container white">
-          <div className="brand fs-500 ff-serif l-2 underline-r">
-            <Link to="/">
+          <Link to="/">
+            <div className="brand fs-500 ff-serif l-2 underline-r">
               <span className="white">JASON</span>
-            </Link>
-          </div>
+            </div>
+          </Link>
           <div className="menu fs-500 letter-m underline-r l-2">
             <span className="menu" onClick={navToggle}>
               MENU

@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "../styles/gallerypage.css"
 function GalleryScreen() {
   return (
-    <div>GalleryScreen</div>
+    <div className='gallery'>GalleryScreen</div>
   )
 }
 

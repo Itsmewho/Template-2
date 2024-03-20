@@ -2,8 +2,12 @@
 
 import React from 'react';
 import '../styles/categories.css';
+import { Link } from 'react-router-dom';
 
 function Categories() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="page-wrapper">
@@ -32,11 +36,14 @@ function Categories() {
                 data-scroll
                 data-scroll-class="animate2"
                 data-scroll-repeat="true">
-                <a className="l-btn link">
+                <Link
+                  to={'/Lifestyle'}
+                  className="l-btn link"
+                  onClick={scrollToTop}>
                   <span className="l-btn-text" data-hover="lifestyle">
                     Read more
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="nutrition">
@@ -60,11 +67,14 @@ function Categories() {
                 data-scroll
                 data-scroll-class="animate2"
                 data-scroll-repeat="true">
-                <a className="l-btn link fs-400">
+                <Link
+                  to={'/Nutrition'}
+                  className="l-btn link fs-400"
+                  onClick={scrollToTop}>
                   <span className="l-btn-text" data-hover="nutrition">
                     Read more
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="training">
@@ -88,11 +98,14 @@ function Categories() {
                 data-scroll
                 data-scroll-class="animate2"
                 data-scroll-repeat="true">
-                <a className="l-btn link fs-400">
+                <Link
+                  to={'/Fitness'}
+                  className="l-btn link fs-400"
+                  onClick={scrollToTop}>
                   <span className="l-btn-text" data-hover="fitness">
                     Read more
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

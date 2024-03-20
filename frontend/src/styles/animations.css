@@ -15,25 +15,7 @@
   animation: SlideInRight 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
   animation-delay: 200ms;
 }
-.a-one {
-  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-}
-.a-two {
-  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  animation-delay: 50ms;
-}
-.a-three {
-  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  animation-delay: 100ms;
-}
-.a-four {
-  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  animation-delay: 150ms;
-}
-.a-five {
-  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  animation-delay: 200ms;
-}
+
 
 @keyframes height {
   0% {

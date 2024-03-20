@@ -1,10 +1,9 @@
 /** @format */
 import Marque from './Marque';
 import MarqueTwo from './MarqueTwo';
-import Megnet from './Megnet';
-import MegnetTwo from './MegnetTwo';
 import gsap from 'gsap';
 import { useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import '../styles/gallery.css';
 import danser from '../assets/danser.jpg';
@@ -87,6 +86,10 @@ function Gallery() {
       container.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -235,19 +238,16 @@ function Gallery() {
                         Do what excites!
                       </h1>
                       <div className="gallery-btn">
-                        <Megnet>
-                          <div className="btn-container">
-                            <div className="outer-btn">
-                              <MegnetTwo>
-                                <a className="btn-link">
-                                  <MegnetTwo>
-                                    <span className="btn-text">Shop</span>
-                                  </MegnetTwo>
-                                </a>
-                              </MegnetTwo>
-                            </div>
+                        <div className="btn-container">
+                          <div className="outer-btn">
+                            <Link
+                              to={'/Shop'}
+                              className="btn-link"
+                              onClick={scrollToTop}>
+                              <span className="btn-text">Shop</span>
+                            </Link>
                           </div>
-                        </Megnet>
+                        </div>
                       </div>
                     </div>
                   </div>

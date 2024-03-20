@@ -94,6 +94,35 @@
   opacity: 0;
   transform: translateY(-60px);
 }
+.a-one {
+  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
+.a-two {
+  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 50ms;
+}
+.a-three {
+  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 100ms;
+}
+.a-four {
+  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 150ms;
+}
+.a-five {
+  animation: Slide 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 200ms;
+}
+@keyframes Slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 @media (max-width: 45em) {
   .f-grid {

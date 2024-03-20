@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from 'react';
 
 export default function MegnetTwo({ children }) {
   const ref = useRef(null);
+
   useEffect(() => {
     if (
       !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -12,10 +13,12 @@ export default function MegnetTwo({ children }) {
       )
     ) {
       const xTo = gsap.quickTo(ref.current, 'x', {
-        duration: 0.5,
+        duration: 3,
+        ease: 'elastic.out(3, 2.8)',
       });
       const yTo = gsap.quickTo(ref.current, 'y', {
-        duration: 0.5,
+        duration: 3,
+        ease: 'elastic.out(3, 2.8)',
       });
 
       const mouseMove = (e) => {
@@ -37,8 +40,8 @@ export default function MegnetTwo({ children }) {
       ref.current.addEventListener('mouseleave', mouseLeave);
 
       return () => {
-        ref.current.addEventListener('mousemove', mouseMove);
-        ref.current.addEventListener('mouseleave', mouseLeave);
+        ref.current.removeEventListener('mousemove', mouseMove);
+        ref.current.removeEventListener('mouseleave', mouseLeave);
       };
     }
   }, []);

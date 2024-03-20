@@ -1,9 +1,12 @@
 /** @format */
 import '../styles/footer.css';
-import Megnet from './Megnet';
-import MegnetTwo from './MegnetTwo';
+import { Link } from 'react-router-dom';
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="f-container" data-scroll-section>
       <div
@@ -21,19 +24,13 @@ function Footer() {
           </p>
         </div>
         <div className="grid-row">
-          <Megnet>
-            <div className="btn-container">
-              <div className="outer-btn">
-                <MegnetTwo>
-                  <a className="btn-link">
-                    <MegnetTwo>
-                      <span className="btn-text">Go Shop</span>
-                    </MegnetTwo>
-                  </a>
-                </MegnetTwo>
-              </div>
+          <div className="btn-container">
+            <div className="outer-btn">
+              <Link to={'/Shop'} className="btn-link" onClick={scrollToTop}>
+                <span className="btn-text">Go Shop</span>
+              </Link>
             </div>
-          </Megnet>
+          </div>
         </div>
       </div>
       <div className="line-container">
@@ -44,6 +41,7 @@ function Footer() {
         <div className="grid-row">
           <a
             href="#"
+            alt="Scroll back to top"
             className=" underline-r dark-white addres letter-b fs-800 upper ff-serif">
             <div
               className="one"
@@ -93,11 +91,21 @@ function Footer() {
             data-scroll
             data-scroll-class="slide-in"
             data-scroll-repeat="true">
-            <li className="link-items underline-r">About</li>
-            <li className="link-items underline-r">Gallery</li>
-            <li className="link-items underline-r">Articles</li>
-            <li className="link-items underline-r">Shop</li>
-            <li className="link-items underline-r">Contact</li>
+            <Link to={'/About'} onClick={scrollToTop}>
+              <li className="link-items underline-r white">My Story</li>
+            </Link>
+            <Link to={'/Gallery'} onClick={scrollToTop}>
+              <li className="link-items underline-r white">Gallery</li>
+            </Link>
+            <Link to={'/Articles'} onClick={scrollToTop}>
+              <li className="link-items underline-r white">Articles</li>
+            </Link>
+            <Link to={'/Shop'} onClick={scrollToTop}>
+              <li className="link-items underline-r white">Shop</li>
+            </Link>
+            <Link to={'/Contact'} onClick={scrollToTop}>
+              <li className="link-items underline-r white">Contact</li>
+            </Link>
           </ul>
         </div>
         <div className="grid-row">
