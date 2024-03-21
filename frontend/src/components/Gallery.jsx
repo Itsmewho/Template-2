@@ -16,6 +16,10 @@ import plasic from '../assets/plasic.jpg';
 import plasic2 from '../assets/plasic2.jpg';
 
 function Gallery() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   const containerRef = useRef(null);
   const plane = useRef(null);
   const plane1 = useRef(null);
@@ -86,10 +90,6 @@ function Gallery() {
       container.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
 
   return (
     <>

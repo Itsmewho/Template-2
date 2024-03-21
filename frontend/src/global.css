@@ -62,7 +62,7 @@ html[data-scroll-orientation='horizontal'] {
 body {
   font-family: 'roundo', 'obvious', 'system-ui', '-apple-system', 'Roboto',
     'Open Sans', 'Helvetica Neue', sans-serif;
-  color: var(--clr-black);
+  color: var(--clr-white);
   background-color: var(--clr-dark-black);
   font-size: 16px;
   font-display: swap;

@@ -21,11 +21,13 @@ import ShopScreen from './screens/ShopScreen.jsx';
 import LifeStyleScreen from './screens/LifeStyleScreen.jsx';
 import FitnessScreen from './screens/FitnessScreen.jsx';
 import NutritionScreen from './screens/NutritionScreen.jsx';
+import NotFound from './screens/NotFoundScreen.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index={true} path="/" element={<Homescreen />} />
+      <Route path="*" element={<NotFound />} />
       <Route path="/About" element={<AboutScreen />} />
       <Route path="/Contact" element={<ContactScreen />} />
       <Route path="/Gallery" element={<GalleryScreen />} />
