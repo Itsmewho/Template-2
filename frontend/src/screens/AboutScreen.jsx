@@ -1,11 +1,22 @@
 /** @format */
-import "../styles/about.css"
+import '../styles/about.css';
 import React from 'react';
 
 const AboutScreen = () => {
   return (
     <>
-      <div className="about">About</div>
+      <section>
+        <div className="page-wrapper">
+          <div className="about-grid">
+            <div className="about-left">
+              hello
+            </div>
+            <div className="about-right">
+              hello
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import App from './App.jsx';
+import { Loader } from './components/Loader';
 import './global.css';
 import './styles/animations.css';
 
@@ -26,16 +27,16 @@ import NotFound from './screens/NotFoundScreen.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index={true} path="/" element={<Homescreen />} />
-      <Route path="*" element={<NotFound />} />
-      <Route path="/About" element={<AboutScreen />} />
-      <Route path="/Contact" element={<ContactScreen />} />
-      <Route path="/Gallery" element={<GalleryScreen />} />
-      <Route path="/Articles" element={<ArticleScreen />} />
-      <Route path="/Shop" element={<ShopScreen />} />
-      <Route path="/Lifestyle" element={<LifeStyleScreen />} />
-      <Route path="/Fitness" element={<FitnessScreen />} />
-      <Route path="/Nutrition" element={<NutritionScreen />} />
+      <Route index={true} path="/" element={<Homescreen />} loader={Loader} />
+      <Route path="*" element={<NotFound />}  loader={Loader}/>
+      <Route path="/About" element={<AboutScreen />} loader={Loader} />
+      <Route path="/Contact" element={<ContactScreen />} loader={Loader}/>
+      <Route path="/Gallery" element={<GalleryScreen />}loader={Loader} />
+      <Route path="/Articles" element={<ArticleScreen />}loader={Loader} />
+      <Route path="/Shop" element={<ShopScreen />}loader={Loader} />
+      <Route path="/Lifestyle" element={<LifeStyleScreen />}loader={Loader} />
+      <Route path="/Fitness" element={<FitnessScreen />}loader={Loader} />
+      <Route path="/Nutrition" element={<NutritionScreen />}loader={Loader} />
     </Route>
   )
 );

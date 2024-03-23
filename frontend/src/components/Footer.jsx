@@ -2,18 +2,15 @@
 import '../styles/footer.css';
 import { Link } from 'react-router-dom';
 import Megnet from './Megnet';
+
 function Footer() {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
 
   return (
-    <div className="f-container" data-scroll-section>
-      <div
-        className="footer-top"
-        data-scroll
-        data-scroll-class="animate"
-        data-scroll-repeat="true">
+    <div className="f-container">
+      <div className="footer-top">
         <h1 className="quote p-big ff-serif letter-b fs-500">
           Transform Your Body!
         </h1>
@@ -45,54 +42,12 @@ function Footer() {
             href="#"
             alt="Scroll back to top"
             className=" underline-r dark-white addres letter-b fs-800 upper ff-serif">
-            <div
-              className="one"
-              data-scroll
-              data-scroll-class="a-one"
-              data-scroll-repeat="true"
-              data-scroll-offset="120px">
-              J
-            </div>
-            <div
-              className="two"
-              data-scroll
-              data-scroll-class="a-two"
-              data-scroll-repeat="true"
-              data-scroll-offset="120px">
-              A
-            </div>
-            <div
-              className="three"
-              data-scroll
-              data-scroll-class="a-three"
-              data-scroll-repeat="true"
-              data-scroll-offset="120px">
-              S
-            </div>
-            <div
-              className="four"
-              data-scroll
-              data-scroll-class="a-four"
-              data-scroll-repeat="true"
-              data-scroll-offset="120px">
-              O
-            </div>
-            <div
-              className="five"
-              data-scroll
-              data-scroll-class="a-five"
-              data-scroll-repeat="true"
-              data-scroll-offset="120px">
-              N
-            </div>
+            JASON
           </a>
         </div>
         <div className="grid-row">
           <ul
-            className="links ul-2 fs-400 upper letter-m l-4"
-            data-scroll
-            data-scroll-class="slide-in"
-            data-scroll-repeat="true">
+            className="links ul-2 fs-400 upper letter-m l-4">
             <Link to={'/About'} onClick={scrollToTop}>
               <li className="link-items underline-r white">My Story</li>
             </Link>
@@ -112,12 +67,9 @@ function Footer() {
         </div>
         <div className="grid-row">
           <ul
-            className="links fs-400 upper letter-m l-4"
-            data-scroll
-            data-scroll-class="li-2"
-            data-scroll-repeat="true">
-            <li className="link-items li-2 underline-r">Instagram</li>
-            <li className="link-items li-2 underline-r">TikTok</li>
+            className="links fs-400 upper letter-m l-4">
+            <li className="link-items underline-r">Instagram</li>
+            <li className="link-items underline-r">TikTok</li>
           </ul>
         </div>
       </div>

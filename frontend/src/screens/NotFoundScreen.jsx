@@ -2,8 +2,11 @@
 
 import React from 'react';
 import '../styles/notfound.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 function NotFound() {
+  const navigate = useNavigate();
+
+
   return (
     <>
       <div className="notfound" data-scroll-section>
@@ -14,11 +17,11 @@ function NotFound() {
           </p>
           <p className="notfound-p ff-sans letter-s fs-600">Page not found</p>
           <div className="notfound-btn-container">
-            <Link to={'/'} className="n-btn link">
+            <a onClick={() => navigate(-1)} className="n-btn link">
               <span className="n-btn-text" data-hover="Prev">
                 Go back
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

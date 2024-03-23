@@ -7,7 +7,6 @@ import Gallery from '../components/Gallery';
 import BlogIntro from '../components/BlogIntro';
 import Testimonials from '../components/Testimonials';
 
-
 function Homescreen() {
   useEffect(() => {
     (async () => {

@@ -1,3 +1,6 @@
-.about{
-    height: 300vh;
+/** @format */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
 }
