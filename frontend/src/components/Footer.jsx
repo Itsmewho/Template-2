@@ -23,8 +23,8 @@ function Footer() {
             the journey with us today!
           </p>
         </div>
-        <div className="grid-row">
-          <Megnet>
+        <Megnet>
+          <div className="grid-row">
             <div className="btn-container">
               <div className="outer-btn">
                 <Link to={'/Shop'} className="btn-link" onClick={scrollToTop}>
@@ -32,8 +32,8 @@ function Footer() {
                 </Link>
               </div>
             </div>
-          </Megnet>
-        </div>
+          </div>
+        </Megnet>
       </div>
       <div className="line-container">
         <div className="line-1"></div>

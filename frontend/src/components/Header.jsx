@@ -3,7 +3,7 @@ import '../styles/header.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Navigation() {
+function Header() {
   const [isActive, setActive] = useState(true);
   const navToggle = () => {
     setActive(!isActive);
@@ -23,17 +23,17 @@ function Navigation() {
           </div>
           <div className="nav-center">
             <ol className="nav-list fs-serif letter-b fs-800 dark-white">
-              <Link to="/About">
-                <li
-                  onClick={navToggle}
-                  className={
-                    isActive
-                      ? 'nav-links-close underline-r l-1'
-                      : 'nav-links underline-r l-1'
-                  }>
+              <li
+                onClick={navToggle}
+                className={
+                  isActive
+                    ? 'nav-links-close underline-r l-1'
+                    : 'nav-links underline-r l-1'
+                }>
+                <Link to="/About">
                   <span className="white">My Story</span>
-                </li>
-              </Link>
+                </Link>
+              </li>
               <li
                 onClick={navToggle}
                 className={
@@ -67,17 +67,17 @@ function Navigation() {
                   <span className="white">Shop</span>
                 </Link>
               </li>
-              <Link to="/Contact">
-                <li
-                  onClick={navToggle}
-                  className={
-                    isActive
-                      ? 'nav-links-close underline-r l-1'
-                      : 'nav-links underline-r l-1'
-                  }>
-                  <span className="white">Contact</span>
-                </li>
-              </Link>
+              <li
+                onClick={navToggle}
+                className={
+                  isActive
+                    ? 'nav-links-close underline-r l-1'
+                    : 'nav-links underline-r l-1'
+                }>
+                <Link to="/Contact">
+                  <span className="white contact">Contact</span>
+                </Link>
+              </li>
             </ol>
           </div>
         </div>
@@ -100,4 +100,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default Header;

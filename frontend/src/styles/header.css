@@ -86,6 +86,7 @@
 .nav-links:nth-child(5) {
   animation-delay: 500ms;
 }
+
 .nav-links-close {
   opacity: 1;
   margin: 1rem auto;
