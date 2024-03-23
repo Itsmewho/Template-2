@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import React from 'react';
 
 export default function Megnet({ children }) {
-  const ref = useRef();
+  const ref = useRef(null);
 
   useEffect(() => {
     if (
@@ -36,12 +36,12 @@ export default function Megnet({ children }) {
         yTo(0);
       };
 
-      ref.current.addEventListener('mousemove', mouseMove);
-      ref.current.addEventListener('mouseleave', mouseLeave);
+      ref.current?.addEventListener('mousemove', mouseMove);
+      ref.current?.addEventListener('mouseleave', mouseLeave);
 
       return () => {
-        ref.current.removeEventListener('mousemove', mouseMove);
-        ref.current.removeEventListener('mouseleave', mouseLeave);
+        ref.current?.removeEventListener('mousemove', mouseMove);
+        ref.current?.removeEventListener('mouseleave', mouseLeave);
       };
     }
   }, []);

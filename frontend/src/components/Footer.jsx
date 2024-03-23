@@ -1,7 +1,7 @@
 /** @format */
 import '../styles/footer.css';
 import { Link } from 'react-router-dom';
-
+import Megnet from './Megnet';
 function Footer() {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -24,13 +24,15 @@ function Footer() {
           </p>
         </div>
         <div className="grid-row">
-          <div className="btn-container">
-            <div className="outer-btn">
-              <Link to={'/Shop'} className="btn-link" onClick={scrollToTop}>
-                <span className="btn-text">Go Shop</span>
-              </Link>
+          <Megnet>
+            <div className="btn-container">
+              <div className="outer-btn">
+                <Link to={'/Shop'} className="btn-link" onClick={scrollToTop}>
+                  <span className="btn-text">Go Shop</span>
+                </Link>
+              </div>
             </div>
-          </div>
+          </Megnet>
         </div>
       </div>
       <div className="line-container">

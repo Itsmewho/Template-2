@@ -4,7 +4,7 @@ import MarqueTwo from './MarqueTwo';
 import gsap from 'gsap';
 import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import Megnet from './Megnet.jsx';
 import '../styles/gallery.css';
 import danser from '../assets/danser.jpg';
 import danser2 from '../assets/danser2.jpg';
@@ -237,18 +237,20 @@ function Gallery() {
                       <h1 className="ff-serif fs-600 letter-m">
                         Do what excites!
                       </h1>
-                      <div className="gallery-btn">
-                        <div className="btn-container">
-                          <div className="outer-btn">
-                            <Link
-                              to={'/Shop'}
-                              className="btn-link"
-                              onClick={scrollToTop}>
-                              <span className="btn-text">Shop</span>
-                            </Link>
+                      <Megnet>
+                        <div className="gallery-btn">
+                          <div className="btn-container">
+                            <div className="outer-btn">
+                              <Link
+                                to={'/Shop'}
+                                className="btn-link"
+                                onClick={scrollToTop}>
+                                <span className="btn-text">Shop</span>
+                              </Link>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </Megnet>
                     </div>
                   </div>
                   <div className="filler"></div>
