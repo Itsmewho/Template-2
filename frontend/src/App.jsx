@@ -7,6 +7,7 @@ import './global.css';
 import './styles/animations.css';
 
 const App = () => {
+  
   return (
     <>
       <Header></Header>
