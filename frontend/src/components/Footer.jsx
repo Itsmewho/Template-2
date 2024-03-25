@@ -20,8 +20,8 @@ function Footer() {
         </h1>
         <div className="footer-p">
           <p className="top-quote ff-sans l-1 letter-s fs-600 fw-100">
-            Unleash Your Passion! with our premium and expert guidance. Embrace
-            the journey with us today!
+            Unleash Your Passion! With my expert guidance. Embrace
+            the your journey today!
           </p>
         </div>
         <Megnet>

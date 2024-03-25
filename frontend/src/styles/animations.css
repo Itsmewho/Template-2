@@ -35,6 +35,11 @@
   animation: fadeInLeft 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
   animation-delay: 500ms;
 }
+.animate-about-4 {
+  opacity: 0;
+  animation: fadeInLeft 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 600ms;
+}
 
 @keyframes height {
   0% {

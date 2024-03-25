@@ -221,9 +221,7 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
-.flex {
-  display: flex;
-}
+
 .page-wrapper {
   max-width: 1920px;
   margin: 0 auto;

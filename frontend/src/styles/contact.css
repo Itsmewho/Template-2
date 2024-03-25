@@ -1,3 +1,164 @@
-.contact{
-    height: 300vh;
+/** @format */
+
+.contact-form {
+  display: grid;
+  justify-content: center;
+  margin: 60px auto;
+  position: relative;
+}
+.contact-form h1 {
+  text-align: center;
+  margin: 3rem auto;
+}
+.underline-contact {
+  border-bottom: 1px solid var(--clr-accent);
+  width: 20%;
+  margin: 1rem auto;
+}
+.form {
+  padding: 3rem;
+}
+.form input,
+select,
+textarea {
+  text-transform: uppercase;
+  font: inherit;
+  font-size: var(--fs-500);
+  line-height: 1.3;
+  margin: 1rem;
+  &:focus {
+    background-color: transparent;
+  }
+}
+.form input {
+  line-height: normal;
+}
+.form textarea {
+  overflow: auto;
+  resize: none;
+  width: 100%;
+}
+.email {
+  float: right;
+  width: 45%;
+}
+.name {
+  float: left;
+  width: 45%;
+}
+.mobile input {
+  min-width: 100%;
+}
+.message {
+  float: none;
+}
+
+.submit input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem 1.5rem;
+  letter-spacing: 3px;
+  margin: 3rem auto;
+  border: 1px solid var(--clr-accent);
+  color: var(--clr-white);
+  border-radius: 50px;
+  transition: 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  &:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    border: 1px solid var(--clr-white);
+  }
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--clr-accent);
+  padding: 0 0 0.5em 0;
+  letter-spacing: 2px;
+}
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.5em 0;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:-moz-placeholder {
+  color: transparent;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+}
+input:-moz-placeholder {
+  opacity: 0;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+textarea:-moz-placeholder {
+  color: transparent;
+}
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+textarea:-moz-placeholder {
+  opacity: 0;
+}
+@media (max-width: 45em) {
+  .contact-form {
+    margin: 3rem auto;
+    padding: 2rem 0;
+  }
+  .form {
+    padding: 3rem 0;
+  }
+  .form input,
+  select,
+  textarea {
+    font-size: var(--fs-400);
+    line-height: 1.3;
+    margin: 1rem auto;
+    &:focus {
+      background-color: transparent;
+    }
+  }
+  .email {
+    float: none;
+    width: 100%;
+  }
+  .email input {
+    width: 100%;
+  }
+  .name {
+    float: none;
+    width: 100%;
+  }
+  .name input {
+    width: 100%;
+  }
 }

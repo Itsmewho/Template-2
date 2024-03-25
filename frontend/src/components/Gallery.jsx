@@ -67,30 +67,6 @@ function Gallery() {
     }
   };
 
-  useEffect(() => {
-    const container = containerRef.current;
-
-    const handleMouseLeave = () => {
-      xForce = 0;
-      yForce = 0;
-
-      gsap.set(plane.current, { x: 0, y: 0 });
-      gsap.set(plane1.current, { x: 0, y: 0 });
-      gsap.set(plane2.current, { x: 0, y: 0 });
-
-      if (requestAnimationFrameId !== null) {
-        cancelAnimationFrame(requestAnimationFrameId);
-        requestAnimationFrameId = null;
-      }
-    };
-
-    container.addEventListener('mouseleave', handleMouseLeave);
-
-    return () => {
-      container.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, []);
-
   return (
     <>
       <div className="page-wrapper">
