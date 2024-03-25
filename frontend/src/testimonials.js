@@ -41,30 +41,7 @@ const products = [
     description:
       'I have seen significant improvements in my strength and endurance in just a few weeks. Highly recommend it!',
   },
-  {
-    _id: '6',
-    name: 'Jordy',
-    image: '/images/jumping.jpg',
-    mobileImage: '/images/danser.jpg',
-    description:
-      'I was hesitant to commit to a fitness site at first, but after reading the glowing reviews, I decided to give it a try. Im so glad I did! ',
-  },
-  {
-    _id: '7',
-    name: 'Stephen',
-    image: '/images/plasic2.jpg',
-    mobileImage: '/images/danser.jpg',
-    description:
-      'I have always been intimidated by the gym environment, so finding an online fitness site was a game-changer for me. The workouts are challenging yet accessible, and the instructors do an excellent job of explaining each exercise in detail. ',
-  },
-  {
-    _id: '8',
-    name: 'Joanne',
-    image: '/images/plasic.jpg',
-    mobileImage: '/images/danser.jpg',
-    description:
-      'After having my second child, I struggled to find the time and energy to prioritize my health and fitness. Thankfully, I discovered this fitness site, which offers quick yet effective workouts that I can easily fit into my busy schedule. ',
-  },
+
 ];
 
 export default products;

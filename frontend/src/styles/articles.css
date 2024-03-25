@@ -16,6 +16,33 @@
   opacity: 0;
   animation: fadeInTop 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
 }
+.breadcrumholder {
+  padding-left: 11rem;
+  display: flex;
+  opacity: 0;
+  animation: fadeInTop 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 150ms;
+}
+.crumb {
+  display: inline-block;
+}
+.crumb > * {
+  content: '-';
+  margin-left: 5px;
+}
+.crumb:after {
+  content: '-';
+  margin: 0px 5px 0 5px;
+}
+.crumb:last-child:after {
+  display: none;
+}
+.crumb Link {
+  &:hover {
+    color: var(--clr-accent);
+  }
+}
+
 .articles-grid {
   display: grid;
   justify-content: center;
@@ -93,6 +120,12 @@
 }
 
 @media (max-width: 45em) {
+  .articles-title {
+    padding: 3rem 0;
+  }
+  .breadcrumholder {
+    padding-left: 1rem;
+  }
   .fitness-cat picture img,
   .lifestyle-cat picture img,
   .nutrition-cat picture img {
@@ -115,6 +148,7 @@
   }
   .article-btn {
     position: relative;
-    padding: none;
+    padding: 3rem 0rem;
+    letter-spacing: 0px;
   }
 }

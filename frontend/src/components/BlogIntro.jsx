@@ -2,11 +2,16 @@
 
 import React from 'react';
 import '../styles/blog.css';
+import { Link } from 'react-router-dom';
 import reading from '../assets/girlreading.jpg';
 import girlwater from '../assets/girlwater.jpg';
 import jumping from '../assets/jumping.jpg';
 
 function BlogIntro() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <div className="page-wrapper">
@@ -31,11 +36,7 @@ function BlogIntro() {
                       srcSet={jumping}
                       media="(min-width: 1250px)"
                     />
-                    <img
-                      as="image"
-                      src={girlwater}
-                      alt="JMT-Creations standing by a waterfall in the mountains"
-                    />
+                    <img as="image" src={girlwater} alt="Image for decortive" />
                   </picture>
                 </div>
                 <div className="blog-intro-text-wrapper">
@@ -48,11 +49,14 @@ function BlogIntro() {
                     Whether it's a brisk walk or a HIIT workout
                   </div>
                   <div className="grid-btn-wrapper">
-                    <a className="l-btn link">
+                    <Link
+                      to={'Articles/Fitness'}
+                      className="l-btn link"
+                      onClick={scrollToTop}>
                       <span className="l-btn-text" data-hover="more">
                         Read
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -76,11 +80,7 @@ function BlogIntro() {
                       srcSet={reading}
                       media="(min-width: 1250px)"
                     />
-                    <img
-                      as="image"
-                      src={girlwater}
-                      alt="JMT-Creations standing by a waterfall in the mountains"
-                    />
+                    <img as="image" src={girlwater} alt="Image for decortive" />
                   </picture>
                 </div>
                 <div className="blog-intro-text-wrapper">
@@ -91,11 +91,14 @@ function BlogIntro() {
                     create a life of health and happiness.
                   </div>
                   <div className="grid-btn-wrapper">
-                    <a className="l-btn link">
+                    <Link
+                      to={'Articles/Lifestyle'}
+                      className="l-btn link"
+                      onClick={scrollToTop}>
                       <span className="l-btn-text" data-hover="more">
                         Read
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -119,11 +122,7 @@ function BlogIntro() {
                       srcSet={girlwater}
                       media="(min-width: 1250px)"
                     />
-                    <img
-                      as="image"
-                      src={girlwater}
-                      alt="JMT-Creations standing by a waterfall in the mountains"
-                    />
+                    <img as="image" src={girlwater} alt="Image for decortive" />
                   </picture>
                 </div>
                 <div className="blog-intro-text-wrapper">
@@ -136,11 +135,14 @@ function BlogIntro() {
                     overall health and well-being."
                   </div>
                   <div className="grid-btn-wrapper">
-                    <a className="l-btn link">
+                    <Link
+                      to={'Articles/Nutrition'}
+                      className="l-btn link"
+                      onClick={scrollToTop}>
                       <span className="l-btn-text" data-hover="more">
                         Read
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

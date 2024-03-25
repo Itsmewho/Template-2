@@ -3,7 +3,7 @@
 .nav-container {
   width: 100%;
   display: flex;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   position: relative;
   justify-content: space-between;
   background-color: var(--clr-dark-black);
@@ -168,7 +168,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   .nav-container {
     padding: 1rem 1rem;
   }

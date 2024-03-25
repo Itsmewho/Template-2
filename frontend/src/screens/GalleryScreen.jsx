@@ -87,7 +87,7 @@ function GalleryScreen() {
                   <img
                     as="image"
                     src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
+                    alt="Image for decortive"
                   />
                 </picture>
               </div>
@@ -113,7 +113,7 @@ function GalleryScreen() {
                   <img
                     as="image"
                     src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
+                    alt="Image of something"
                   />
                 </picture>
               </div>
@@ -135,7 +135,7 @@ function GalleryScreen() {
                   <img
                     as="image"
                     src={danser2}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
+                    alt="Image of something"
                   />
                 </picture>
               </div>
@@ -157,7 +157,7 @@ function GalleryScreen() {
                   <img
                     as="image"
                     src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
+                    alt="Image for decortive"
                   />
                 </picture>
               </div>
@@ -183,7 +183,7 @@ function GalleryScreen() {
                   <img
                     as="image"
                     src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
+                    alt="Image for decortive"
                   />
                 </picture>
               </div>
@@ -208,7 +208,7 @@ function GalleryScreen() {
                   <img
                     as="image"
                     src={danser2}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
+                    alt="JImage for decortives"
                   />
                 </picture>
               </div>
@@ -234,7 +234,7 @@ function GalleryScreen() {
                   <img
                     as="image"
                     src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
+                    alt="Image for decortive"
                   />
                 </picture>
               </div>

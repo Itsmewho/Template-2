@@ -1,6 +1,6 @@
 /** @format */
 import '../styles/about.css';
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import girlwater from '../assets/girlwater.jpg';
 import plasic2 from '../assets/plasic2.jpg';
 
@@ -131,12 +131,12 @@ const AboutScreen = () => {
             </div>
             <div className="about-right">
               <picture>
-                <source as="image" srcSet={plasic2} media="(min-width: 1250px)" />
-                <img
+                <source
                   as="image"
-                  src={girlwater}
-                  alt="JMT-Creations standing by a waterfall in the mountains"
+                  srcSet={plasic2}
+                  media="(min-width: 1250px)"
                 />
+                <img as="image" src={girlwater} alt="Image for decortive" />
               </picture>
             </div>
           </div>

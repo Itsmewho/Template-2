@@ -24,7 +24,7 @@ function Testimonials() {
                   <img
                     as="image"
                     src={products[1].mobileImage}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
+                    alt="Image for decortive"
                   />
                 </picture>
                 <div className="testname">
@@ -46,7 +46,7 @@ function Testimonials() {
                   <img
                     as="image"
                     src={products[2].mobileImage}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
+                    alt="Image for decortive"
                   />
                 </picture>
                 <div className="testname">
@@ -68,7 +68,7 @@ function Testimonials() {
                   <img
                     as="image"
                     src={products[4].mobileImage}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
+                    alt="Image for decortive"
                   />
                 </picture>
                 <div className="testname">

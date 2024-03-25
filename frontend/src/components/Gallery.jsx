@@ -89,11 +89,7 @@ function Gallery() {
                     srcSet={jumping}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={danser2}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={danser2} alt="Image for decortive" />
                 </picture>
                 <picture className="hero-image">
                   <source
@@ -101,11 +97,7 @@ function Gallery() {
                     srcSet={danser2}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={danser} alt="Image for decortive" />
                 </picture>
                 <picture className="hero-image">
                   <source
@@ -113,11 +105,7 @@ function Gallery() {
                     srcSet={dude}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={danser} alt="Image for decortive" />
                 </picture>
               </div>
               <div className="plane1" ref={plane1}>
@@ -127,11 +115,7 @@ function Gallery() {
                     srcSet={reading}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={danser2}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={danser2} alt="Image for decortive" />
                 </picture>
                 <picture className="hero-image">
                   <source
@@ -139,11 +123,7 @@ function Gallery() {
                     srcSet={girlwater}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={danser} alt="Image for decortive" />
                 </picture>
                 <picture className="hero-image">
                   <source
@@ -151,11 +131,7 @@ function Gallery() {
                     srcSet={plasic2}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={danser} alt="Image for decortive" />
                 </picture>
               </div>
               <div className="plane2" ref={plane2}>
@@ -165,11 +141,7 @@ function Gallery() {
                     srcSet={danser}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={danser2}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={danser2} alt="Image for decortive" />
                 </picture>
                 <picture className="hero-image">
                   <source
@@ -177,11 +149,7 @@ function Gallery() {
                     srcSet={danser2}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={danser} alt="Image for decortive" />
                 </picture>
                 <picture className="hero-image">
                   <source
@@ -189,11 +157,7 @@ function Gallery() {
                     srcSet={plasic}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={danser}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={danser} alt="Image for decortive" />
                 </picture>
               </div>
               <div className="grid-fixed">

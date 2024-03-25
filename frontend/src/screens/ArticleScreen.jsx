@@ -6,6 +6,7 @@ import '../styles/articles.css';
 import girls from '../assets/recover.jpg';
 import mobile from '../assets/mobile-Recovered.jpg';
 import Testimonials from '../components/Testimonials';
+import BreadCrums from '../components/BreadCrums';
 
 function ArticleScreen() {
   useEffect(() => {
@@ -14,6 +15,9 @@ function ArticleScreen() {
       const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -22,6 +26,9 @@ function ArticleScreen() {
           <div className="articles-title">
             <h1 className="letter-b fs-700">Atricles</h1>
             <h2 className="letter-s fs-300 upper">Catagories</h2>
+          </div>
+          <div className="breadcrumholder fs-300 letter-s upper">
+            <BreadCrums></BreadCrums>
           </div>
           <div className="articles-grid">
             <div className="fitness-cat">
@@ -35,11 +42,7 @@ function ArticleScreen() {
                     srcSet={girls}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={mobile}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={mobile} alt="Image for decortive" />
                 </picture>
               </div>
               <div className="article-text">
@@ -53,7 +56,10 @@ function ArticleScreen() {
                 </p>
               </div>
               <div className="article-btn">
-                <Link to={'/Fitness'} className="l-btn link">
+                <Link
+                  to={'./Fitness'}
+                  className="l-btn link"
+                  onClick={scrollToTop}>
                   <span className="l-btn-text" data-hover="fitness">
                     Read more
                   </span>
@@ -71,11 +77,7 @@ function ArticleScreen() {
                     srcSet={girls}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={mobile}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={mobile} alt="Image for decortive" />
                 </picture>
               </div>
               <div className="article-text">
@@ -88,7 +90,10 @@ function ArticleScreen() {
                 </p>
               </div>
               <div className="article-btn">
-                <Link to={'/Lifestyle'} className="l-btn link">
+                <Link
+                  to={'./Lifestyle'}
+                  className="l-btn link"
+                  onClick={scrollToTop}>
                   <span className="l-btn-text" data-hover="LifeStyle">
                     Read more
                   </span>
@@ -106,11 +111,7 @@ function ArticleScreen() {
                     srcSet={girls}
                     media="(min-width: 1250px)"
                   />
-                  <img
-                    as="image"
-                    src={mobile}
-                    alt="JMT-Creations standing by a waterfall in the mountains"
-                  />
+                  <img as="image" src={mobile} alt="Image for decortive" />
                 </picture>
               </div>
               <div className="article-text">
@@ -124,7 +125,10 @@ function ArticleScreen() {
                 </p>
               </div>
               <div className="article-btn">
-                <Link to={'/Nutrition'} className="l-btn link">
+                <Link
+                  to={'./Nutrition'}
+                  className="l-btn link"
+                  onClick={scrollToTop}>
                   <span className="l-btn-text" data-hover="Nutrition">
                     Read more
                   </span>

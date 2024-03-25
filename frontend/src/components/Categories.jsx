@@ -37,7 +37,7 @@ function Categories() {
                 data-scroll-class="animate2"
                 data-scroll-repeat="true">
                 <Link
-                  to={'/Lifestyle'}
+                  to={'Articles/Lifestyle'}
                   className="l-btn link"
                   onClick={scrollToTop}>
                   <span className="l-btn-text" data-hover="lifestyle">
@@ -68,7 +68,7 @@ function Categories() {
                 data-scroll-class="animate2"
                 data-scroll-repeat="true">
                 <Link
-                  to={'/Nutrition'}
+                  to={'Articles/Nutrition'}
                   className="l-btn link fs-400"
                   onClick={scrollToTop}>
                   <span className="l-btn-text" data-hover="nutrition">
@@ -99,7 +99,7 @@ function Categories() {
                 data-scroll-class="animate2"
                 data-scroll-repeat="true">
                 <Link
-                  to={'/Fitness'}
+                  to={'Articles/Fitness'}
                   className="l-btn link fs-400"
                   onClick={scrollToTop}>
                   <span className="l-btn-text" data-hover="fitness">

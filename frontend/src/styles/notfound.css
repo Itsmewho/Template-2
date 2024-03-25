@@ -1,65 +1,67 @@
-.notfound{
-    position: absolute;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    top: 0;
-    left: 0;
-    z-index: 800;
-    overflow: hidden;
-    background-color: brown;
-    height: 100vh;
-    width: 100vw;
+/** @format */
+
+.notfound {
+  position: fixed;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  overflow: hidden;
+  background-color: brown;
+  height: 100vh;
+  width: 100vw;
 }
-.notfound div{
-    opacity: 0;
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
-    animation: fadeInTop 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-    animation-delay: 100ms;
+.notfound div {
+  opacity: 0;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  animation: fadeInTop 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 100ms;
 }
-.notfound h1{
-    opacity: 0;
-    animation: fadeInTop 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-    animation-delay: 200ms;
+.notfound h1 {
+  opacity: 0;
+  animation: fadeInTop 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 200ms;
 }
-.notfound p{
-    opacity: 0;
-    animation: fadeInTop 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-    animation-delay: 300ms;
+.notfound p {
+  opacity: 0;
+  animation: fadeInTop 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 300ms;
 }
 
-.notfound-btn-container{
-    opacity: 0;
-    z-index: 900;
-    margin: 2rem;
-    animation: fadeInTop 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
-    animation-delay: 350ms;
+.notfound-btn-container {
+  opacity: 0;
+  z-index: 900;
+  margin: 2rem;
+  animation: fadeInTop 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 350ms;
 }
 
 .n-btn {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    width: fit-content;
-    height: fit-content;
-    padding: 1rem 2rem;
-    border: 1px solid var(--clr-white);
-    color: var(--clr-white);
-    border-radius: 50px;
-    transition: 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    &:hover {
-      background-color: var(--clr-white);
-      color: var(--clr-black);
-    }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem 2rem;
+  border: 1px solid var(--clr-white);
+  color: var(--clr-white);
+  border-radius: 50px;
+  transition: 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  &:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
   }
-  
-  .n-btn-text{
-    text-transform: uppercase;
-    position: relative;
-    letter-spacing: 1px;
-  }
+}
+
+.n-btn-text {
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+}
