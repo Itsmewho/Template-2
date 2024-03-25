@@ -1,8 +1,8 @@
 /** @format */
 import '../styles/about.css';
-import React from 'react';
-import { useEffect } from 'react';
-import products from '../testimonials';
+import React, {useEffect} from 'react';
+import girlwater from '../assets/girlwater.jpg';
+import plasic2 from '../assets/plasic2.jpg';
 
 const AboutScreen = () => {
   useEffect(() => {
@@ -131,16 +131,11 @@ const AboutScreen = () => {
             </div>
             <div className="about-right">
               <picture>
-                <source
-                  as="image"
-                  srcSet={products[1].image}
-                  media="(min-width: 1250px)"
-                  alt={products[1].description}
-                />
+                <source as="image" srcSet={plasic2} media="(min-width: 1250px)" />
                 <img
                   as="image"
-                  src={products[2].image}
-                  alt={products[2].description}
+                  src={girlwater}
+                  alt="JMT-Creations standing by a waterfall in the mountains"
                 />
               </picture>
             </div>

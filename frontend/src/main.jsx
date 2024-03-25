@@ -23,6 +23,8 @@ import LifeStyleScreen from './screens/LifeStyleScreen.jsx';
 import FitnessScreen from './screens/FitnessScreen.jsx';
 import NutritionScreen from './screens/NutritionScreen.jsx';
 import NotFound from './screens/NotFoundScreen.jsx';
+import CartScreen from './screens/CartScreen.jsx';
+import LogInScreen from './screens/LogInScreen.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -37,6 +39,8 @@ const router = createBrowserRouter(
       <Route path="/Lifestyle" element={<LifeStyleScreen />}loader={Loader} />
       <Route path="/Fitness" element={<FitnessScreen />}loader={Loader} />
       <Route path="/Nutrition" element={<NutritionScreen />}loader={Loader} />
+      <Route path="/Cart" element={<CartScreen />}loader={Loader} />
+      <Route path="/Login" element={<LogInScreen />}loader={Loader} />
     </Route>
   )
 );

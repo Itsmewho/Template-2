@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_2" data-name="Laag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583.33 583.33">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #f5ffeb;
+        stroke-linecap: round;
+        stroke-width: 50px;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 133.33;
+      }
+    </style>
+  </defs>
+  <g id="Laag_1-2" data-name="Laag 1">
+    <g>
+      <path class="cls-2" d="m558.33,291.67c0-147.28-119.39-266.67-266.67-266.67m0,533.33c84.21,0,159.31-39.04,208.18-100"/>
+      <path class="cls-1" d="m25,291.67h333.33m0,0l-100-100m100,100l-100,100"/>
+    </g>
+  </g>
+</svg>

@@ -1,9 +1,16 @@
 /** @format */
 import '../styles/articles.css';
-import React from 'react';
+import React, {useEffect} from 'react';
+
 
 function LifeStyleScreen() {
-  return <div className='articles'>LifeStyleScreen</div>;
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import(`locomotive-scroll`)).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+  return <div className="articles">LifeStyleScreen</div>;
 }
 
 export default LifeStyleScreen;

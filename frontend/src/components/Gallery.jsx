@@ -51,9 +51,13 @@ function Gallery() {
       x: `+=${xForce * 0.4}`,
       y: `+=${yForce * 0.4}`,
     });
-    gsap.set(plane2.current, {
+    gsap.set(plane.current, {
       x: `+=${xForce * 0.35}`,
       y: `+=${yForce * 0.35}`,
+    });
+    gsap.set(plane2.current, {
+      x: `+=${xForce * 0.2}`,
+      y: `+=${yForce * 0.2}`,
     });
 
     if (Math.abs(xForce) < 0.01) xForce = 0;

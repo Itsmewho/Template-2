@@ -312,7 +312,7 @@ p {
   transition: 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   &:hover {
     background-color: var(--clr-accent);
-    color: var(--clr-black);
+    color: var(--clr-white);
   }
 }
 
@@ -359,7 +359,7 @@ a.link {
 
   &:hover span:before,
   &:focus span:before {
-    color: var(--clr-black);
+    color: var(--clr-white);
   }
   &:hover .b-btn-text:before,
   &:focus .b-btn-text:before {

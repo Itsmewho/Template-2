@@ -1,8 +1,15 @@
 /** @format */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function CartScreen() {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import(`locomotive-scroll`)).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+  
   return <div>CartScreen</div>;
 }
 

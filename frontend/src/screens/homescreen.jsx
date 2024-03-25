@@ -1,6 +1,5 @@
 /** @format */
-import { useEffect } from 'react';
-import React from 'react';
+import React, {useEffect} from 'react';
 import Hero from '../components/Hero';
 import Categories from '../components/Categories';
 import Gallery from '../components/Gallery';
@@ -17,6 +16,7 @@ function Homescreen() {
 
   return (
     <>
+    
       <Hero></Hero>
       <Categories></Categories>
       <Gallery></Gallery>

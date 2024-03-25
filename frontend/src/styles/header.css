@@ -16,11 +16,40 @@
 }
 .menu {
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   animation: fadeInTop 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
   animation-delay: 200ms;
   cursor: pointer;
 }
-
+.icon {
+  width: 1.8rem;
+  background-image: url(../assets/login.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 300ms;
+  &:hover {
+    background-image: url(../assets/loginRed.svg);
+  }
+}
+.icon1 {
+  width: 1.8rem;
+  background-image: url(../assets/shoppingCart.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 300ms;
+  &:hover {
+    background-image: url(../assets/shoppingred.svg);
+  }
+}
+.menu span {
+  margin: 0.25rem 0;
+}
 /*--- Nav open / close  ---*/
 .nav-wrapper {
   position: relative;
@@ -136,5 +165,22 @@
   transition: 300ms;
   &:hover {
     color: var(--clr-accent);
+  }
+}
+
+@media (max-width: 320px) {
+  .nav-container {
+    padding: 1rem 1rem;
+  }
+  .menu{
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 280px) {
+  .nav-container {
+    padding: 1rem 0.2rem;
+  }
+  .menu{
+    gap: 0.5rem;
   }
 }
