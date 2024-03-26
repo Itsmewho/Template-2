@@ -67,15 +67,12 @@ function NutritionDetail() {
                   alt={nutrtion.alt}
                   media="(min-width: 1250px)"
                 />
-                <img
-                  src={nutrtion.detailMobileImage}
-                  alt={nutrtion.alt}
-                />
+                <img src={nutrtion.detailMobileImage} alt={nutrtion.alt} />
               </picture>
               <div className="center-detail-2">
                 <div>
                   <Link
-                    to={'../Articles/fitness'}
+                    to={'../Articles/Nutrition'}
                     className="l-btn link"
                     onClick={scrollToTop}>
                     <span className="l-btn-text" data-hover="Read more">

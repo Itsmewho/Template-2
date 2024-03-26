@@ -1,6 +1,7 @@
 {
   "name": "jason",
   "private": true,
+  "proxy": "http://localhost:5000",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
+    "axios": "^1.6.8",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.11",
     "react": "^18.2.0",

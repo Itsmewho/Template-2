@@ -1,9 +1,9 @@
 /** @format */
 import '../styles/articles.css';
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import lifestyles from '../lifestyle';
+import React, { useEffect, useState } from 'react';
 import BreadCrums from '../components/BreadCrums';
+import LifeStyle from '../components/LifeStyle';
+import axios from 'axios';
 
 function LifeStyleScreen() {
   useEffect(() => {
@@ -12,10 +12,16 @@ function LifeStyleScreen() {
       const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
 
+  const [lifestyles, setlifestyles] = useState([]);
+
+  useEffect(() => {
+    const fetchLifestyle = async () => {
+      const { data } = await axios.get('/api/lifestyles');
+      setlifestyles(data);
+    };
+    fetchLifestyle();
+  }, []);
   return (
     <>
       <section>
@@ -29,38 +35,8 @@ function LifeStyleScreen() {
           </div>
           <div className="articles-grid">
             {lifestyles.map((lifestyles) => (
-              <div className="fitness-cat">
-                <div className="eyebrow">
-                  <span>{lifestyles.name}</span>
-                </div>
-                <div className="article-image">
-                  <picture>
-                    <source
-                      as="image"
-                      srcSet={lifestyles.image}
-                      alt={lifestyles.alt}
-                      media="(min-width: 1250px)"
-                    />
-                    <img
-                      as="image"
-                      src={lifestyles.mobileImage}
-                      alt={lifestyles.alt}
-                    />
-                  </picture>
-                </div>
-                <div className="article-text">
-                  <p className="fs-400 letter-s">{lifestyles.description}</p>
-                </div>
-                <div className="article-btn">
-                  <Link
-                    to={`./${lifestyles.name}`}
-                    className="l-btn link"
-                    onClick={scrollToTop}>
-                    <span className="l-btn-text" data-hover="fitness">
-                      Read more
-                    </span>
-                  </Link>
-                </div>
+              <div key={lifestyles._id}>
+                <LifeStyle lifestyles={lifestyles}></LifeStyle>
               </div>
             ))}
             <div className="breadcrumholder fs-300 letter-s upper">
