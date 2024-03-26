@@ -31,12 +31,11 @@ function NutritionDetail() {
               <h1 className="fs-900 ff-serif letter-b">{nutrtion.name}</h1>
               <picture className="mobile-order">
                 <source
-                  as="image"
                   srcSet={nutrtion.image}
                   alt={nutrtion.alt}
                   media="(min-width: 1250px)"
                 />
-                <img as="image" src={nutrtion.mobileImage} alt={nutrtion.alt} />
+                <img src={nutrtion.mobileImage} alt={nutrtion.alt} />
               </picture>
               <p className="secondaire-text fs-600 ff-serif">
                 {nutrtion.description}
@@ -64,13 +63,11 @@ function NutritionDetail() {
               </div>
               <picture>
                 <source
-                  as="image"
                   srcSet={nutrtion.detailImage}
                   alt={nutrtion.alt}
                   media="(min-width: 1250px)"
                 />
                 <img
-                  as="image"
                   src={nutrtion.detailMobileImage}
                   alt={nutrtion.alt}
                 />

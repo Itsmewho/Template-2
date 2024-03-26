@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import BreadCrums from '../components/BreadCrums';

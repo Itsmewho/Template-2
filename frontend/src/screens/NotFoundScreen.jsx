@@ -1,11 +1,9 @@
 /** @format */
 
-import React from 'react';
 import '../styles/notfound.css';
 import { useNavigate } from 'react-router-dom';
 function NotFound() {
   const navigate = useNavigate();
-
 
   return (
     <>
