@@ -29,18 +29,14 @@ function NutritionDetail() {
           <div className="articledetail-grid">
             <div className="image-detail">
               <h1 className="fs-900 ff-serif letter-b">{nutrtion.name}</h1>
-              <picture>
+              <picture className="mobile-order">
                 <source
                   as="image"
                   srcSet={nutrtion.image}
                   alt={nutrtion.alt}
                   media="(min-width: 1250px)"
                 />
-                <img
-                  as="image"
-                  src={nutrtion.mobileImage}
-                  alt="JMT-Creations standing by a waterfall in the mountains"
-                />
+                <img as="image" src={nutrtion.mobileImage} alt={nutrtion.alt} />
               </picture>
               <p className="secondaire-text fs-600 ff-serif">
                 {nutrtion.description}
@@ -82,7 +78,7 @@ function NutritionDetail() {
               <div className="center-detail-2">
                 <div>
                   <Link
-                    to={'../Articles/Nutrition'}
+                    to={'../Articles/fitness'}
                     className="l-btn link"
                     onClick={scrollToTop}>
                     <span className="l-btn-text" data-hover="Read more">
@@ -102,7 +98,8 @@ function NutritionDetail() {
                 </div>
               </div>
             </div>
-            <div className="breadcrumholder fs-300 letter-s upper">
+
+            <div className="breadcrumholder fs-300 letter-s upper mobile-bread">
               <BreadCrums></BreadCrums>
             </div>
           </div>

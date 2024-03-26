@@ -1,6 +1,6 @@
 /** @format */
-.article-detail-section{
-    padding-top: 5rem;
+.article-detail-section {
+  padding-top: 5rem;
 }
 .articledetail-grid {
   display: grid;
@@ -9,6 +9,7 @@
   grid-template-rows: 1.2fr;
   padding: 5rem;
 }
+
 .articledetail-grid2 {
   display: grid;
   justify-content: center;
@@ -16,6 +17,7 @@
   grid-template-rows: 1fr;
   padding: 4.5rem;
 }
+
 .center-detail {
   display: flex;
   justify-content: center;
@@ -29,12 +31,18 @@
   position: relative;
   z-index: 5;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fadeInLeft 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 200ms;
 }
 .image-detail picture img {
+  opacity: 0;
   height: 500px;
   border-radius: 15px;
   margin: 0 auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  animation: opacity 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 300ms;
 }
 .longtext2 {
   display: grid;
@@ -46,13 +54,27 @@
   justify-content: center;
 }
 .longtext-p {
+  opacity: 0;
   padding-bottom: 2rem;
   width: 30ch;
+  animation: SlideInRight 500ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 250ms;
+}
+.longtext-p:nth-child(1) {
+  animation-delay: 200ms;
+}
+.longtext-p:nth-child(2) {
+  animation-delay: 150ms;
+}
+.longtext-p:nth-child(3) {
+  animation-delay: 100ms;
 }
 .secondaire-text {
+  opacity: 0;
   padding: 4rem 0 0 11%;
+  animation: fadeInTop 300ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  animation-delay: 500ms;
 }
-
 .longtext-q {
   width: 30ch;
   text-align: center;
@@ -67,9 +89,143 @@
   margin: 0 auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.center-detail-2{
+.center-detail-2 {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  gap: 2rem;
+}
+
+@media (max-width: 78.125em) {
+  .articledetail-grid {
+    padding: 5rem 0;
+    grid-template-columns: 1.3fr 0.8fr;
+  }
+  .articledetail-grid2 {
+    padding: 5rem 0;
+    grid-template-columns: 0.8fr 1.3fr;
+  }
+  .image-detail picture img {
+    height: 350px;
+  }
+  .image-detail-2 picture img {
+    height: 350px;
+  }
+  .secondaire-text {
+    padding: 2rem;
+    text-align: center;
+  }
+  .longtext2 {
+    justify-content: end;
+  }
+  .longtext {
+    padding-top: 2rem;
+  }
+  .longtext-p {
+    padding: 1rem;
+    width: 100%;
+  }
+  .longtext-q {
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+  .image-detail h1 {
+    margin-bottom: -2rem;
+  }
+}
+@media (max-width: 55em) {
+  .articledetail-grid {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .articledetail-grid2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .breadcrumholder {
+    padding: 0;
     justify-content: center;
-    padding: 5rem;
-    gap: 2rem;
+  }
+  .image-detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-detail h1 {
+    order: 1;
+    margin-bottom: 0rem;
+  }
+  .secondaire-text {
+    padding: 2rem;
+    order: 2;
+  }
+  .mobile-order {
+    order: 3;
+  }
+  .image-detail-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .longtext2 {
+    order: 2;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .mobile-bread {
+    order: 3;
+  }
+  .longtext {
+    padding-top: 2rem;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+  }
+  .longtext-p {
+    max-width: 50ch;
+    padding: 0.5rem;
+  }
+  .longtext-q {
+    padding-bottom: 5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 35em) {
+  .image-detail h1 {
+    font-size: var(--fs-700);
+  }
+  .image-detail-2 h1 {
+    font-size: var(--fs-700);
+  }
+  .center-detail {
+    display: grid;
+  }
+  .longtext-q {
+    padding: 0.2rem 0.2rem 5rem 0.2rem;
+    width: 100%;
+  }
+  .center-detail-2 {
+    display: grid;
+    justify-content: center;
+    padding: 3rem 0 3rem 0;
+  }
+  .center-detail-2 div {
+    margin: 0 auto;
+  }
+  .articledetail-grid2 {
+    padding-top: 1rem;
+  }
+  .secondaire-text {
+    padding: 3rem 0.2rem 3rem 0.2rem;
+  }
+  .image-detail picture img {
+    height: 250px;
+    width: 100%;
+  }
+  .image-detail-2 picture img {
+    height: 250px;
+  }
 }

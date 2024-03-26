@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import BreadCrums from '../components/BreadCrums';
 import '../styles/articlesDetail.css';
 import fitnessBlog from '../fitness';
-import Megnet from '../components/Megnet';
 
 function FitnessDetail() {
   useEffect(() => {
@@ -32,18 +31,14 @@ function FitnessDetail() {
           <div className="articledetail-grid">
             <div className="image-detail">
               <h1 className="fs-900 ff-serif letter-b">{fitnessB.name}</h1>
-              <picture>
+              <picture className="mobile-order">
                 <source
                   as="image"
                   srcSet={fitnessB.image}
                   alt={fitnessB.alt}
                   media="(min-width: 1250px)"
                 />
-                <img
-                  as="image"
-                  src={fitnessB.mobileImage}
-                  alt="JMT-Creations standing by a waterfall in the mountains"
-                />
+                <img as="image" src={fitnessB.mobileImage} alt={fitnessB.alt} />
               </picture>
               <p className="secondaire-text fs-600 ff-serif">
                 {fitnessB.description}
@@ -55,7 +50,8 @@ function FitnessDetail() {
               <p className="longtext-p">{fitnessB.longtext2}</p>
             </div>
           </div>
-          <div className="articledetail-grid2">
+          <div
+            className="articledetail-grid2">
             <div className="longtext2 fs-400 ff-sans">
               <p className="longtext-p">{fitnessB.longtext3}</p>
               <p className="longtext-p">{fitnessB.longtext4}</p>
@@ -105,7 +101,8 @@ function FitnessDetail() {
                 </div>
               </div>
             </div>
-            <div className="breadcrumholder fs-300 letter-s upper">
+
+            <div className="breadcrumholder fs-300 letter-s upper mobile-bread">
               <BreadCrums></BreadCrums>
             </div>
           </div>

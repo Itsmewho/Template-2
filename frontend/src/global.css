@@ -399,4 +399,7 @@ a.link {
   .stylePage {
     justify-items: center;
   }
+  .l-btn-text{
+    text-align: center;
+  }
 }
