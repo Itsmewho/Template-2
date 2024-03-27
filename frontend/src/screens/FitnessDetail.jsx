@@ -52,15 +52,15 @@ function FitnessDetail() {
               </p>
             </div>
             <div className="longtext ff-sans fs-400">
-              <p className="longtext-p">{fitnessB.longtext}</p>
-              <p className="longtext-p">{fitnessB.longtext1}</p>
-              <p className="longtext-p">{fitnessB.longtext2}</p>
-            </div>	  
+              <p className="longtext-p">{fitnessB.paragraph}</p>
+              <p className="longtext-p">{fitnessB.paragraph1}</p>
+              <p className="longtext-p">{fitnessB.paragraph2}</p>
+            </div>
           </div>
           <div className="articledetail-grid2">
             <div className="longtext2 fs-400 ff-sans">
-              <p className="longtext-p">{fitnessB.longtext3}</p>
-              <p className="longtext-p">{fitnessB.longtext4}</p>
+              <p className="longtext-p">{fitnessB.paragraph3}</p>
+              <p className="longtext-p">{fitnessB.paragraph4}</p>
             </div>
             <div className="image-detail-2">
               <div className="center-detail">

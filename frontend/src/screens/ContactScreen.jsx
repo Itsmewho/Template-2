@@ -1,9 +1,10 @@
 /** @format */
 import Contact from '../components/Contact';
 import '../styles/contact.css';
-import React, {useEffect} from 'react';
+import { useEffect } from 'react';
 
 function ContactScreen() {
+
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import('locomotive-scroll')).default;

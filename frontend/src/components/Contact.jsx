@@ -2,7 +2,6 @@
 
 import React from 'react';
 
-
 function Contact() {
   return (
     <div className="page-wrapper">
@@ -11,7 +10,7 @@ function Contact() {
         <div className="underline-contact"></div>
         <form action="#" method="post" id="contact_form" className="form">
           <div className="name">
-            <label for="name"></label>
+            <label htmlFor="name"></label>
             <input
               type="text"
               placeholder="My name is"
@@ -20,7 +19,7 @@ function Contact() {
               required></input>
           </div>
           <div className="email">
-            <label for="email"></label>
+            <label htmlFor="email"></label>
             <input
               type="email"
               placeholder="My e-mail is"
@@ -29,7 +28,7 @@ function Contact() {
               required></input>
           </div>
           <div className="mobile">
-            <label for="name"></label>
+            <label htmlFor="name"></label>
             <input
               type="text"
               placeholder="My number is"
@@ -38,7 +37,7 @@ function Contact() {
               required></input>
           </div>
           <div className="message">
-            <label for="message"></label>
+            <label htmlFor="message"></label>
             <textarea
               name="message"
               placeholder="I'd like to chat about"

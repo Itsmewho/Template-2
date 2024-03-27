@@ -55,15 +55,15 @@ function LifeStyleDetail() {
               </p>
             </div>
             <div className="longtext ff-sans fs-400">
-              <p className="longtext-p">{lifestyles.longtext}</p>
-              <p className="longtext-p">{lifestyles.longtext1}</p>
-              <p className="longtext-p">{lifestyles.longtext2}</p>
+              <p className="longtext-p">{lifestyles.paragraph}</p>
+              <p className="longtext-p">{lifestyles.paragraph1}</p>
+              <p className="longtext-p">{lifestyles.paragraph2}</p>
             </div>
           </div>
           <div className="articledetail-grid2">
             <div className="longtext2 fs-400 ff-sans">
-              <p className="longtext-p">{lifestyles.longtext3}</p>
-              <p className="longtext-p">{lifestyles.longtext4}</p>
+              <p className="longtext-p">{lifestyles.paragraph3}</p>
+              <p className="longtext-p">{lifestyles.paragraph4}</p>
             </div>
             <div className="image-detail-2">
               <div className="center-detail">

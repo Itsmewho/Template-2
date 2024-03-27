@@ -50,15 +50,15 @@ function NutritionDetail() {
               </p>
             </div>
             <div className="longtext ff-sans fs-400">
-              <p className="longtext-p">{nutritionso.longtext}</p>
-              <p className="longtext-p">{nutritionso.longtext1}</p>
-              <p className="longtext-p">{nutritionso.longtext2}</p>
+              <p className="longtext-p">{nutritionso.paragraph}</p>
+              <p className="longtext-p">{nutritionso.paragraph1}</p>
+              <p className="longtext-p">{nutritionso.paragraph2}</p>
             </div>
           </div>
           <div className="articledetail-grid2">
             <div className="longtext2 fs-400 ff-sans">
-              <p className="longtext-p">{nutritionso.longtext3}</p>
-              <p className="longtext-p">{nutritionso.longtext4}</p>
+              <p className="longtext-p">{nutritionso.paragraph3}</p>
+              <p className="longtext-p">{nutritionso.paragraph4}</p>
             </div>
             <div className="image-detail-2">
               <div className="center-detail">

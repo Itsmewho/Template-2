@@ -33,23 +33,23 @@ const lifestyleSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    longtext: {
+    paragraph: {
       type: String,
       required: true,
     },
-    longtext1: {
+    paragraph1: {
       type: String,
       required: true,
     },
-    longtext2: {
+    paragraph2: {
       type: String,
       required: true,
     },
-    longtext3: {
+    paragraph3: {
       type: String,
       required: true,
     },
-    longtext4: {
+    paragraph4: {
       type: String,
       required: true,
     },
