@@ -1,6 +1,6 @@
 /** @format */
 import '../styles/articles.css';
-import React, { useEffect, useState } from 'react';;
+import React, { useEffect, useState } from 'react';
 import BreadCrums from '../components/BreadCrums';
 import axios from 'axios';
 import Fitness from '../components/Fitness';
@@ -8,8 +8,8 @@ import Fitness from '../components/Fitness';
 function FitnessScreen() {
   useEffect(() => {
     (async () => {
-      const LocomotiveScroll = (await import(`locomotive-scroll`)).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      new LocomotiveScroll();
     })();
   }, []);
 

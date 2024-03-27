@@ -27,7 +27,7 @@ function Nutrition({ nutritions }) {
       </div>
       <div className="article-btn">
         <Link
-          to={`./${nutritions.name}`}
+          to={`./${nutritions._id}`}
           className="l-btn link"
           onClick={scrollToTop}>
           <span className="l-btn-text" data-hover="fitness">

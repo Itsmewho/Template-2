@@ -41,8 +41,8 @@ function BlogIntro() {
                 </div>
                 <div className="blog-intro-text-wrapper">
                   <div className="blog-intro-paragraph ff-sans letter-s l-1 fs-400">
-                    "Consistency is key! Make{' '}
-                    <span className="accent">exercise </span>a regular part of
+                    "Consistency is key! Make
+                    <span className="accent"> exercise </span>a regular part of
                     your routine to reap the full benefits. Choose activities
                     you <span className="accent">enjoy</span> to stay
                     <span className="accent"> motivated</span> and engaged.
@@ -85,8 +85,8 @@ function BlogIntro() {
                 </div>
                 <div className="blog-intro-text-wrapper">
                   <div className="blog-intro-paragraph ff-sans letter-s l-1 fs-400">
-                    Take <span className="accent">charge</span> of your{' '}
-                    <span className="accent">well-being</span> with us! Explore
+                    Take <span className="accent">charge</span> of your
+                    <span className="accent"> well-being</span> with us! Explore
                     expert tips on health and living. break boundaries, and
                     create a life of health and happiness.
                   </div>
@@ -130,8 +130,8 @@ function BlogIntro() {
                     <span className="accent">Balance </span>
                     is key! Enjoy a variety of foods. With a array of fruits,
                     vegetables, proteins, and whole grains. A diverse approach
-                    ensures you receive a wide range of{' '}
-                    <span className="accent">essential nutrients</span> for
+                    ensures you receive a wide range of
+                    <span className="accent"> essential nutrients</span> for
                     overall health and well-being."
                   </div>
                   <div className="grid-btn-wrapper">

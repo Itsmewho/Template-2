@@ -3,10 +3,13 @@ import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 import connectDB from './config/db.js';
+import { notFound, errorHandler } from './middleware/errormiddleware.js';
 
-import fitnessBlog from './data/fitness.js';
-import lifestyles from './data/lifestyle.js';
-import nutritions from './data/nutrition.js';
+import productRoutes from './routes/productsRoutes.js';
+import nutritionRoutes from './routes/nutritionRoutes.js';
+import lifestyleRoutes from './routes/lifestyleRoutes.js';
+import fitnessRoutes from './routes/fitnessRoutes.js';
+import users from './data/users.js';
 
 const port = process.env.PORT || 5000;
 connectDB(); //
@@ -16,27 +19,22 @@ app.get('/', (req, res) => {
   res.send('API is running,.');
 });
 
-app.get('/api/fitnessBlog', (req, res) => {
-  res.json(fitnessBlog);
-});
-app.get('/api/lifestyles', (req, res) => {
-  res.json(lifestyles);
-});
-app.get('/api/nutritions', (req, res) => {
-  res.json(nutritions);
+app.use('/api/products', productRoutes);
+app.use('/api/nutritions', nutritionRoutes);
+app.use('/api/fitnessBlog', fitnessRoutes);
+app.use('/api/lifestyles', lifestyleRoutes);
+app.use('/api/products', productRoutes);
+
+app.get('/api/users', (req, res) => {
+  res.json(users);
 });
 
-app.get('/api/fitnessBlog/:id', (req, res) => {
-  const fitnessB = fitnessBlog.find((f) => f._id === req.params.id);
-  res.json(fitnessB);
+app.get('/api/users/:id', (req, res) => {
+  const users = users.find((f) => f._id === req.params.id);
+  res.json(users);
 });
-app.get('/api/lifestyles/:id', (req, res) => {
-  const lifestyle = lifestyles.find((f) => f._id === req.params.id);
-  res.json(lifestyle);
-});
-app.get('/api/nutritions/:id', (req, res) => {
-  const nutrtion = nutritions.find((f) => f._id === req.params.id);
-  res.json(nutrtion);
-});
+
+app.use(notFound);
+app.use(errorHandler);
 
 app.listen(port, () => console.log(`Server is running on: ${port}`));

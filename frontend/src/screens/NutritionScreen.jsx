@@ -8,13 +8,10 @@ import Nutrition from '../components/Nutrition';
 function NutritionScreen() {
   useEffect(() => {
     (async () => {
-      const LocomotiveScroll = (await import(`locomotive-scroll`)).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      new LocomotiveScroll();
     })();
   }, []);
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
   const [nutritions, setNutritions] = useState([]);
 
   useEffect(() => {

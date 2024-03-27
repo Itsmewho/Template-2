@@ -1,23 +1,31 @@
 /** @format */
-import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import nutritions from '../nutrition';
+import React, { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import axios from 'axios';
 import BreadCrums from '../components/BreadCrums';
 import '../styles/articlesDetail.css';
 
 function NutritionDetail() {
   useEffect(() => {
     (async () => {
-      const LocomotiveScroll = (await import(`locomotive-scroll`)).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      new LocomotiveScroll();
     })();
   }, []);
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
+
   const { id: nutritionsId } = useParams();
-  const nutrtion = nutritions.find((n) => n.name === nutritionsId);
+  const [nutritionso, setNutritions] = useState([]);
+
+  useEffect(() => {
+    const fetchNutrition = async () => {
+      const { data } = await axios.get(`/api/nutritions/${nutritionsId}`);
+      setNutritions(data);
+    };
+    fetchNutrition();
+  }, [nutritionsId]);
 
   return (
     <>
@@ -28,46 +36,49 @@ function NutritionDetail() {
           </div>
           <div className="articledetail-grid">
             <div className="image-detail">
-              <h1 className="fs-900 ff-serif letter-b">{nutrtion.name}</h1>
+              <h1 className="fs-900 ff-serif letter-b">{nutritionso.name}</h1>
               <picture className="mobile-order">
                 <source
-                  srcSet={nutrtion.image}
-                  alt={nutrtion.alt}
+                  srcSet={nutritionso.image}
+                  alt={nutritionso.alt}
                   media="(min-width: 1250px)"
                 />
-                <img src={nutrtion.mobileImage} alt={nutrtion.alt} />
+                <img src={nutritionso.mobileImage} alt={nutritionso.alt} />
               </picture>
               <p className="secondaire-text fs-600 ff-serif">
-                {nutrtion.description}
+                {nutritionso.description}
               </p>
             </div>
             <div className="longtext ff-sans fs-400">
-              <p className="longtext-p">{nutrtion.longtext}</p>
-              <p className="longtext-p">{nutrtion.longtext1}</p>
-              <p className="longtext-p">{nutrtion.longtext2}</p>
+              <p className="longtext-p">{nutritionso.longtext}</p>
+              <p className="longtext-p">{nutritionso.longtext1}</p>
+              <p className="longtext-p">{nutritionso.longtext2}</p>
             </div>
           </div>
           <div className="articledetail-grid2">
             <div className="longtext2 fs-400 ff-sans">
-              <p className="longtext-p">{nutrtion.longtext3}</p>
-              <p className="longtext-p">{nutrtion.longtext4}</p>
+              <p className="longtext-p">{nutritionso.longtext3}</p>
+              <p className="longtext-p">{nutritionso.longtext4}</p>
             </div>
             <div className="image-detail-2">
               <div className="center-detail">
                 <div>
-                  <p className="longtext-q">{nutrtion.short}</p>
+                  <p className="longtext-q">{nutritionso.short}</p>
                 </div>
                 <div>
-                  <p className="longtext-q">{nutrtion.short1}</p>
+                  <p className="longtext-q">{nutritionso.short1}</p>
                 </div>
               </div>
               <picture>
                 <source
-                  srcSet={nutrtion.detailImage}
-                  alt={nutrtion.alt}
+                  srcSet={nutritionso.detailImage}
+                  alt={nutritionso.alt}
                   media="(min-width: 1250px)"
                 />
-                <img src={nutrtion.detailMobileImage} alt={nutrtion.alt} />
+                <img
+                  src={nutritionso.detailMobileImage}
+                  alt={nutritionso.alt}
+                />
               </picture>
               <div className="center-detail-2">
                 <div>

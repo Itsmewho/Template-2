@@ -1,17 +1,16 @@
 /** @format */
 
-import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import axios from 'axios';
 import BreadCrums from '../components/BreadCrums';
 import '../styles/articlesDetail.css';
-import fitnessBlog from '../fitness';
 
 function FitnessDetail() {
   useEffect(() => {
     (async () => {
-      const LocomotiveScroll = (await import(`locomotive-scroll`)).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      new LocomotiveScroll();
     })();
   }, []);
   const scrollToTop = () => {
@@ -19,7 +18,15 @@ function FitnessDetail() {
   };
 
   const { id: fitnessId } = useParams();
-  const fitnessB = fitnessBlog.find((f) => f.name === fitnessId);
+  const [fitnessB, setfitnessBlogs] = useState([]);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      const { data } = await axios.get(`/api/fitnessBlog/${fitnessId}`);
+      setfitnessBlogs(data);
+    };
+    fetchBlogs();
+  }, [fitnessId]);
 
   return (
     <>
@@ -48,10 +55,9 @@ function FitnessDetail() {
               <p className="longtext-p">{fitnessB.longtext}</p>
               <p className="longtext-p">{fitnessB.longtext1}</p>
               <p className="longtext-p">{fitnessB.longtext2}</p>
-            </div>
+            </div>	  
           </div>
-          <div
-            className="articledetail-grid2">
+          <div className="articledetail-grid2">
             <div className="longtext2 fs-400 ff-sans">
               <p className="longtext-p">{fitnessB.longtext3}</p>
               <p className="longtext-p">{fitnessB.longtext4}</p>

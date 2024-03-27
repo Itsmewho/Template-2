@@ -12,8 +12,8 @@ import plasic2 from '../assets/plasic2.jpg';
 function GalleryScreen() {
   useEffect(() => {
     (async () => {
-      const LocomotiveScroll = (await import(`locomotive-scroll`)).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      new LocomotiveScroll();
     })();
   }, []);
 

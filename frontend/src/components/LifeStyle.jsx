@@ -27,7 +27,7 @@ function LifeStyle({ lifestyles }) {
       </div>
       <div className="article-btn">
         <Link
-          to={`./${lifestyles.name}`}
+          to={`./${lifestyles._id}`}
           className="l-btn link"
           onClick={scrollToTop}>
           <span className="l-btn-text" data-hover="fitness">

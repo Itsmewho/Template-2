@@ -1,7 +1,9 @@
 /** @format */
 import React from 'react';
 import '../styles/testimonials.css';
-import products from '../testimonials.js';
+import danser from '/images/danser.jpg';
+import girl from '/images/girlwater.jpg';
+import dude from '/images/dude.jpg';
 
 function Testimonials() {
   return (
@@ -16,68 +18,54 @@ function Testimonials() {
               data-scroll-repeat="true">
               <div className="testslide">
                 <picture>
-                  <source
-                    as="image"
-                    srcSet={products[1].image}
-                    media="(min-width: 1250px)"
-                  />
-                  <img
-                    as="image"
-                    src={products[1].mobileImage}
-                    alt="Image for decortive"
-                  />
+                  <source srcSet={dude} media="(min-width: 1250px)" />
+                  <img src={danser} alt="Image for decortive" />
                 </picture>
                 <div className="testname">
                   <span className="testionialname letter-s ff-serif fs-500">
-                    {products[1].name}
+                    Lennard
                   </span>
                 </div>
                 <div className="test-paragraph letter-s">
-                  <p>{products[1].description}</p>
+                  <p>
+                    I was skeptical about online fitness programs, but this
+                    website has exceeded all my expectations.
+                  </p>
                 </div>
               </div>
               <div className="testslide">
                 <picture>
-                  <source
-                    as="image"
-                    srcSet={products[2].image}
-                    media="(min-width: 1250px)"
-                  />
-                  <img
-                    as="image"
-                    src={products[2].mobileImage}
-                    alt="Image for decortive"
-                  />
+                  <source srcSet={girl} media="(min-width: 1250px)" />
+                  <img src={dude} alt="Image for decortive" />
                 </picture>
                 <div className="testname">
                   <span className="testionialname letter-s ff-serif fs-500">
-                    {products[2].name}
+                    Jestle
                   </span>
                 </div>
                 <div className="test-paragraph letter-s">
-                  <p>{products[2].description}</p>
+                  <p>
+                    Being a mom of three, finding time for myself was always a
+                    challenge. This website has been a game-changer for me. The
+                    quick, effective workouts can be done from home
+                  </p>
                 </div>
               </div>
               <div className="testslide">
                 <picture>
-                  <source
-                    as="image"
-                    srcSet={products[4].image}
-                    media="(min-width: 1250px)"
-                  />
-                  <img
-                    as="image"
-                    src={products[4].mobileImage}
-                    alt="Image for decortive"
-                  />
+                  <source srcSet={danser} media="(min-width: 1250px)" />
+                  <img src={dude} alt="Image for decortive" />
                 </picture>
                 <div className="testname">
                   <span className="testionialname letter-s ff-serif fs-500">
-                    {products[4].name}
+                    Emma
                   </span>
                 </div>
                 <div className="test-paragraph letter-s">
-                  <p>{products[4].description}</p>
+                  <p>
+                    I have seen significant improvements in my strength and
+                    endurance in just a few weeks. Highly recommend it!
+                  </p>
                 </div>
               </div>
             </div>

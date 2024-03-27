@@ -1,23 +1,31 @@
 /** @format */
-import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import lifestyles from '../lifestyle';
+import React, { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import axios from 'axios';
 import BreadCrums from '../components/BreadCrums';
 import '../styles/articlesDetail.css';
 
 function LifeStyleDetail() {
   useEffect(() => {
     (async () => {
-      const LocomotiveScroll = (await import(`locomotive-scroll`)).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      new LocomotiveScroll();
     })();
   }, []);
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
+
   const { id: lifestylesId } = useParams();
-  const lifestyle = lifestyles.find((l) => l.name === lifestylesId);
+  const [lifestyles, setlifestyles] = useState([]);
+
+  useEffect(() => {
+    const fetchLife = async () => {
+      const { data } = await axios.get(`/api/lifestyles/${lifestylesId}`);
+      setlifestyles(data);
+    };
+    fetchLife();
+  }, [lifestylesId]);
 
   return (
     <>
@@ -28,55 +36,55 @@ function LifeStyleDetail() {
           </div>
           <div className="articledetail-grid">
             <div className="image-detail">
-              <h1 className="fs-900 ff-serif letter-b">{lifestyle.name}</h1>
+              <h1 className="fs-900 ff-serif letter-b">{lifestyles.name}</h1>
               <picture className="mobile-order">
                 <source
                   as="image"
-                  srcSet={lifestyle.image}
-                  alt={lifestyle.alt}
+                  srcSet={lifestyles.image}
+                  alt={lifestyles.alt}
                   media="(min-width: 1250px)"
                 />
                 <img
                   as="image"
-                  src={lifestyle.mobileImage}
-                  alt={lifestyle.alt}
+                  src={lifestyles.mobileImage}
+                  alt={lifestyles.alt}
                 />
               </picture>
               <p className="secondaire-text fs-600 ff-serif">
-                {lifestyle.description}
+                {lifestyles.description}
               </p>
             </div>
             <div className="longtext ff-sans fs-400">
-              <p className="longtext-p">{lifestyle.longtext}</p>
-              <p className="longtext-p">{lifestyle.longtext1}</p>
-              <p className="longtext-p">{lifestyle.longtext2}</p>
+              <p className="longtext-p">{lifestyles.longtext}</p>
+              <p className="longtext-p">{lifestyles.longtext1}</p>
+              <p className="longtext-p">{lifestyles.longtext2}</p>
             </div>
           </div>
           <div className="articledetail-grid2">
             <div className="longtext2 fs-400 ff-sans">
-              <p className="longtext-p">{lifestyle.longtext3}</p>
-              <p className="longtext-p">{lifestyle.longtext4}</p>
+              <p className="longtext-p">{lifestyles.longtext3}</p>
+              <p className="longtext-p">{lifestyles.longtext4}</p>
             </div>
             <div className="image-detail-2">
               <div className="center-detail">
                 <div>
-                  <p className="longtext-q">{lifestyle.short}</p>
+                  <p className="longtext-q">{lifestyles.short}</p>
                 </div>
                 <div>
-                  <p className="longtext-q">{lifestyle.short1}</p>
+                  <p className="longtext-q">{lifestyles.short1}</p>
                 </div>
               </div>
               <picture>
                 <source
                   as="image"
-                  srcSet={lifestyle.detailImage}
-                  alt={lifestyle.alt}
+                  srcSet={lifestyles.detailImage}
+                  alt={lifestyles.alt}
                   media="(min-width: 1250px)"
                 />
                 <img
                   as="image"
-                  src={lifestyle.detailMobileImage}
-                  alt={lifestyle.alt}
+                  src={lifestyles.detailMobileImage}
+                  alt={lifestyles.alt}
                 />
               </picture>
               <div className="center-detail-2">
