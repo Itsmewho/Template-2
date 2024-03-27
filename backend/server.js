@@ -9,6 +9,10 @@ import productRoutes from './routes/productsRoutes.js';
 import nutritionRoutes from './routes/nutritionRoutes.js';
 import lifestyleRoutes from './routes/lifestyleRoutes.js';
 import fitnessRoutes from './routes/fitnessRoutes.js';
+import workoutRoutes from './routes/workoutsRoutes.js';
+import recipesRoutes from './routes/recipesRoutes.js';
+import researchRoutes from './routes/researchRoutes.js';
+import muscleRoutes from './routes/muscleRoutes.js';
 import users from './data/users.js';
 
 const port = process.env.PORT || 5000;
@@ -24,6 +28,10 @@ app.use('/api/nutritions', nutritionRoutes);
 app.use('/api/fitnessBlog', fitnessRoutes);
 app.use('/api/lifestyles', lifestyleRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/workouts', workoutRoutes);
+app.use('/api/muscle', muscleRoutes);
+app.use('/api/research', researchRoutes);
+app.use('/api/recipes', recipesRoutes);
 
 app.get('/api/users', (req, res) => {
   res.json(users);

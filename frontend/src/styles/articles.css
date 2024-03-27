@@ -1,10 +1,12 @@
 /** @format */
+.margin-bottom{
+  margin-bottom: 5rem;
+}
 .articles-title {
   display: grid;
   text-align: center;
   padding: 3rem;
 }
-
 .articles-title h1 {
   text-decoration: underline 1px solid var(--clr-accent);
   text-underline-offset: 5px;
@@ -50,7 +52,6 @@
   grid-template-rows: 1fr;
   gap: 2rem;
   padding: 3rem;
-  margin-bottom: 8rem;
 }
 
 .eyebrow {

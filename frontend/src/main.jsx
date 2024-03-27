@@ -20,14 +20,22 @@ import GalleryScreen from './screens/GalleryScreen.jsx';
 import ArticleScreen from './screens/ArticleScreen.jsx';
 import ShopScreen from './screens/ShopScreen.jsx';
 import LifeStyleScreen from './screens/LifeStyleScreen.jsx';
-import LifeStyleDetail from './screens/LifeStyleDetail.jsx';
+import LifeStyleDetail from './Details/LifeStyleDetail.jsx';
 import FitnessScreen from './screens/FitnessScreen.jsx';
-import FitnessDetail from './screens/FitnessDetail.jsx';
+import FitnessDetail from './Details/FitnessDetail.jsx';
 import NutritionScreen from './screens/NutritionScreen.jsx';
-import NutritionDetail from './screens/NutritionDetail.jsx';
+import NutritionDetail from './Details/NutritionDetail.jsx';
 import NotFound from './screens/NotFoundScreen.jsx';
 import CartScreen from './screens/CartScreen.jsx';
 import LogInScreen from './screens/LogInScreen.jsx';
+import ResearchDetail from './Details/ResearchDetail.jsx';
+import ResearchScreen from './screens/ResearchScreen.jsx';
+import RecipesDetail from './Details/RecipesDetail.jsx';
+import RecipesScreen from './screens/RecipesScreen.jsx';
+import WorkoutDetail from './Details/WorkoutDetail.jsx';
+import WorkoutScreen from './screens/WorkoutScreen.jsx';
+import MuscleDetail from './Details/MuscleDetail.jsx';
+import MuscleScreen from './screens/MuscleScreen.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -67,6 +75,46 @@ const router = createBrowserRouter(
       <Route
         path="Articles/Nutrition/:id"
         element={<NutritionDetail />}
+        loader={Loader}
+      />
+      <Route
+        path="Articles/Research"
+        element={<ResearchScreen />}
+        loader={Loader}
+      />
+      <Route
+        path="Articles/Research/:id"
+        element={<ResearchDetail />}
+        loader={Loader}
+      />
+      <Route
+        path="Articles/Recipes"
+        element={<RecipesScreen />}
+        loader={Loader}
+      />
+      <Route
+        path="Articles/Recipes/:id"
+        element={<RecipesDetail />}
+        loader={Loader}
+      />
+      <Route
+        path="Articles/Workouts"
+        element={<WorkoutScreen />}
+        loader={Loader}
+      />
+      <Route
+        path="Articles/Workouts/:id"
+        element={<WorkoutDetail />}
+        loader={Loader}
+      />
+      <Route
+        path="Articles/Muscle"
+        element={<MuscleScreen />}
+        loader={Loader}
+      />
+      <Route
+        path="Articles/Muscle/:id"
+        element={<MuscleDetail />}
         loader={Loader}
       />
       <Route path="/Cart" element={<CartScreen />} loader={Loader} />

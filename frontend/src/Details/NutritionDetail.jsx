@@ -5,7 +5,7 @@ import axios from 'axios';
 import BreadCrums from '../components/BreadCrums';
 import '../styles/articlesDetail.css';
 
-function LifeStyleDetail() {
+function NutritionDetail() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import('locomotive-scroll')).default;
@@ -16,16 +16,16 @@ function LifeStyleDetail() {
     window.scrollTo(0, 0);
   };
 
-  const { id: lifestylesId } = useParams();
-  const [lifestyles, setlifestyles] = useState([]);
+  const { id: nutritionsId } = useParams();
+  const [nutritionso, setNutritions] = useState([]);
 
   useEffect(() => {
-    const fetchLife = async () => {
-      const { data } = await axios.get(`/api/lifestyles/${lifestylesId}`);
-      setlifestyles(data);
+    const fetchNutrition = async () => {
+      const { data } = await axios.get(`/api/nutritions/${nutritionsId}`);
+      setNutritions(data);
     };
-    fetchLife();
-  }, [lifestylesId]);
+    fetchNutrition();
+  }, [nutritionsId]);
 
   return (
     <>
@@ -36,61 +36,54 @@ function LifeStyleDetail() {
           </div>
           <div className="articledetail-grid">
             <div className="image-detail">
-              <h1 className="fs-900 ff-serif letter-b">{lifestyles.name}</h1>
+              <h1 className="fs-900 ff-serif letter-b">{nutritionso.name}</h1>
               <picture className="mobile-order">
                 <source
-                  as="image"
-                  srcSet={lifestyles.image}
-                  alt={lifestyles.alt}
+                  srcSet={nutritionso.image}
+                  alt={nutritionso.alt}
                   media="(min-width: 1250px)"
                 />
-                <img
-                  as="image"
-                  src={lifestyles.mobileImage}
-                  alt={lifestyles.alt}
-                />
+                <img src={nutritionso.mobileImage} alt={nutritionso.alt} />
               </picture>
               <p className="secondaire-text fs-600 ff-serif">
-                {lifestyles.description}
+                {nutritionso.description}
               </p>
             </div>
             <div className="longtext ff-sans fs-400">
-              <p className="longtext-p">{lifestyles.paragraph}</p>
-              <p className="longtext-p">{lifestyles.paragraph1}</p>
-              <p className="longtext-p">{lifestyles.paragraph2}</p>
+              <p className="longtext-p">{nutritionso.paragraph}</p>
+              <p className="longtext-p">{nutritionso.paragraph1}</p>
+              <p className="longtext-p">{nutritionso.paragraph2}</p>
             </div>
           </div>
           <div className="articledetail-grid2">
             <div className="longtext2 fs-400 ff-sans">
-              <p className="longtext-p">{lifestyles.paragraph3}</p>
-              <p className="longtext-p">{lifestyles.paragraph4}</p>
+              <p className="longtext-p">{nutritionso.paragraph3}</p>
+              <p className="longtext-p">{nutritionso.paragraph4}</p>
             </div>
             <div className="image-detail-2">
               <div className="center-detail">
                 <div>
-                  <p className="longtext-q">{lifestyles.short}</p>
+                  <p className="longtext-q">{nutritionso.short}</p>
                 </div>
                 <div>
-                  <p className="longtext-q">{lifestyles.short1}</p>
+                  <p className="longtext-q">{nutritionso.short1}</p>
                 </div>
               </div>
               <picture>
                 <source
-                  as="image"
-                  srcSet={lifestyles.detailImage}
-                  alt={lifestyles.alt}
+                  srcSet={nutritionso.detailImage}
+                  alt={nutritionso.alt}
                   media="(min-width: 1250px)"
                 />
                 <img
-                  as="image"
-                  src={lifestyles.detailMobileImage}
-                  alt={lifestyles.alt}
+                  src={nutritionso.detailMobileImage}
+                  alt={nutritionso.alt}
                 />
               </picture>
               <div className="center-detail-2">
                 <div>
                   <Link
-                    to={'../Articles/Lifestyle'}
+                    to={'../Articles/Nutrition'}
                     className="l-btn link"
                     onClick={scrollToTop}>
                     <span className="l-btn-text" data-hover="Read more">
@@ -100,7 +93,7 @@ function LifeStyleDetail() {
                 </div>
                 <div>
                   <Link
-                    to={'/shop'}
+                    to={'/Shop'}
                     className="l-btn link"
                     onClick={scrollToTop}>
                     <span className="l-btn-text" data-hover="shop">
@@ -121,4 +114,4 @@ function LifeStyleDetail() {
   );
 }
 
-export default LifeStyleDetail;
+export default NutritionDetail;

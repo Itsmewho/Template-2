@@ -13,6 +13,10 @@ import lifestyles from './data/lifestyle.js';
 import nutritions from './data/nutrition.js';
 import products from './data/products.js';
 import users from './data/users.js';
+import workouts from './data/workouts.js';
+import muscle from './data/muscle.js';
+import recipes from './data/recipes.js';
+import research from './data/research.js';
 
 //models -->
 
@@ -22,6 +26,10 @@ import Nutrition from './models/nutritionModel.js';
 import Product from './models/productModel.js';
 import Order from './models/orderModel.js';
 import User from './models/userModel.js';
+import Recipes from './models/recipesModel.js';
+import Muscle from './models/muscleModel.js';
+import Workouts from './models/workoutModel.js';
+import Research from './models/researchModel.js';
 
 //Data management -->
 
@@ -33,16 +41,40 @@ const importData = async () => {
     await Nutrition.deleteMany();
     await Product.deleteMany();
     await User.deleteMany();
+    await Workouts.deleteMany();
+    await Muscle.deleteMany();
+    await Recipes.deleteMany();
+    await Research.deleteMany();
 
     const createdUsers = await User.insertMany(users);
 
     const adminUser = createdUsers[0]._id;
 
+    const sampleWorkouts = workouts.map((workouts) => {
+      return { ...workouts, user: adminUser };
+    });
+    await Workouts.insertMany(sampleWorkouts);
+
+    const sampleMuscle = muscle.map((muscle) => {
+      return { ...muscle, user: adminUser };
+    });
+    await Muscle.insertMany(sampleMuscle);
+
+    const sampleRecipes = recipes.map((recipes) => {
+      return { ...recipes, user: adminUser };
+    });
+    await Recipes.insertMany(sampleRecipes);
+
+    const sampleResearch = research.map((research) => {
+      return { ...research, user: adminUser };
+    });
+    await Research.insertMany(sampleResearch);
+
     const sampleFitness = fitnessBlog.map((fitness) => {
       return { ...fitness, user: adminUser };
     });
-    await Fitness.insertMany(sampleFitness);
 
+    await Fitness.insertMany(sampleFitness);
     const sampleLifestyles = lifestyles.map((lifestyles) => {
       return { ...lifestyles, user: adminUser };
     });
@@ -74,6 +106,10 @@ const destroyData = async () => {
     await Nutrition.deleteMany();
     await Product.deleteMany();
     await User.deleteMany();
+    await Workouts.deleteMany();
+    await Muscle.deleteMany();
+    await Recipes.deleteMany();
+    await Research.deleteMany();
 
     console.log('Data Destroyed!');
     process.exit();

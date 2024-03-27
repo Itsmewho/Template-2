@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
-import BreadCrums from '../components/BreadCrums';
 import '../styles/articlesDetail.css';
+import BreadCrums from '../components/BreadCrums';
 
 function FitnessDetail() {
   useEffect(() => {
@@ -97,7 +97,7 @@ function FitnessDetail() {
                 </div>
                 <div>
                   <Link
-                    to={'/shop'}
+                    to={'/Shop'}
                     className="l-btn link"
                     onClick={scrollToTop}>
                     <span className="l-btn-text" data-hover="shop">
