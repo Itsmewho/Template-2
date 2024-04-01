@@ -53,7 +53,23 @@ function ProductDetail() {
             </div>
           </div>
           <div className="right-product">
-            <div className="sticky-card"></div>
+            <div className="sticky-card">
+              <div className="shop-card fs-400">
+                <h2>{products.name}</h2>
+                <h3>{products.category}</h3>
+                <p>Rating: {products.rating}</p>
+                <p>Price: {products.price}</p>
+                <p>In Stock: {products.countInStock}</p>
+                <Link
+                  to={`./`}
+                  className="l-btn link"
+                  onClick={scrollToTop}>
+                  <span className="l-btn-text" data-hover="ADD TO CARD">
+                    ADD TO CARD
+                  </span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

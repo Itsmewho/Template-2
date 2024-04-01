@@ -26,4 +26,5 @@ ul.tabs-nav li.active {
 .outlet {
   padding: 2rem 2rem 5rem 2rem;
   border: 1px solid var(--clr-dark-white);
+  height: 370px;
 }
