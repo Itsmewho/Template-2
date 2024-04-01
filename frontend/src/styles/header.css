@@ -167,20 +167,40 @@
     color: var(--clr-accent);
   }
 }
-
+@media (max-width: 35em) {
+  .menu > link {
+    order: 1;
+  }
+  .menu link:nth-child(1) {
+    order: 2;
+  }
+  .menu span {
+    order: 3;
+  }
+}
 @media (max-width: 340px) {
   .nav-container {
     padding: 1rem 1rem;
   }
-  .menu{
+  .menu {
+    display: flex;
     gap: 0.5rem;
+  }
+  .menu > link {
+    order: 1;
+  }
+  .menu link:nth-child(1) {
+    order: 2;
+  }
+  .menu span {
+    order: 3;
   }
 }
 @media (max-width: 280px) {
   .nav-container {
     padding: 1rem 0.2rem;
   }
-  .menu{
+  .menu {
     gap: 0.5rem;
   }
 }

@@ -1,0 +1,36 @@
+/** @format */
+.arrow-left,
+.arrow-right {
+  all: unset;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  padding: 1rem;
+}
+.arrow-left {
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.arrow-right {
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.arrow-left img,
+.arrow-right img {
+    height: 2rem;
+}
+.slider-image {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: translate 300ms ease-in-out;
+}
+.slider-image-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}

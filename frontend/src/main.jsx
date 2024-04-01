@@ -36,6 +36,7 @@ import WorkoutDetail from './Details/WorkoutDetail.jsx';
 import WorkoutScreen from './screens/WorkoutScreen.jsx';
 import MuscleDetail from './Details/MuscleDetail.jsx';
 import MuscleScreen from './screens/MuscleScreen.jsx';
+import ProductsDetail from './Details/ProductDetail.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -47,6 +48,11 @@ const router = createBrowserRouter(
       <Route path="/Gallery" element={<GalleryScreen />} loader={Loader} />
       <Route path="/Articles" element={<ArticleScreen />} loader={Loader} />
       <Route path="/Shop" element={<ShopScreen />} loader={Loader} />
+      <Route
+        path="Shop/Products/:id"
+        element={<ProductsDetail />}
+        loader={Loader}
+      />
       <Route
         path="Articles/Lifestyle"
         element={<LifeStyleScreen />}

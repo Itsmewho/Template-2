@@ -86,9 +86,9 @@ function Categories() {
                 data-scroll
                 data-scroll-class="animate"
                 data-scroll-repeat="true">
-                "Consistency is key! Make
+                "Consistency is key! Make{' '}
                 <span className="accent">exercise </span>a regular part of your
-                routine to reap the full benefits. Choose activities you
+                routine to reap the full benefits. Choose activities you{' '}
                 <span className="accent">enjoy</span> to stay
                 <span className="accent"> motivated</span> and engaged. Whether
                 it's a brisk walk or a HIIT workout

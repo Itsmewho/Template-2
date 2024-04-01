@@ -10,21 +10,23 @@ function Contact() {
         <div className="underline-contact"></div>
         <form action="#" method="post" id="contact_form" className="form">
           <div className="name">
-            <label htmlFor="name"></label>
+            <label htmlFor="name" id="firstName"></label>
             <input
               type="text"
               placeholder="My name is"
               name="name"
               id="name_input"
+              autoComplete="given-name"
               required></input>
           </div>
           <div className="email">
-            <label htmlFor="email"></label>
+            <label htmlFor="email" id="email"></label>
             <input
               type="email"
               placeholder="My e-mail is"
               name="email"
               id="email_input"
+              autoComplete="off"
               required></input>
           </div>
           <div className="mobile">
