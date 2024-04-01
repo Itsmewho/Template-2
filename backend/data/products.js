@@ -4,8 +4,8 @@ const products = [
   {
     name: 'Amino [brand]',
     image: '/images/dummy.webp',
-    image1: '/images/dummy.webp',
-    image2: '/images/dummy.webp',
+    image1: '/images/sample.jpg',
+    image2: '/images/mouse.jpg',
     shortdescription:
       'A potent blend of amino acids and energy-boosting compounds, designed to enhance muscle recovery, increase endurance, and optimize performance during workouts. Fuel your thunderous strength.',
     description:
@@ -21,8 +21,8 @@ const products = [
   {
     name: 'Whey protein [brand]',
     image: '/images/dummy.webp',
-    image1: '/images/dummy.webp',
-    image2: '/images/dummy.webp',
+    image1: '/images/sample.jpg',
+    image2: '/images/mouse.jpg',
     shortdescription:
       'Premium protein powder crafted for maximum muscle growth and repair. Packed with essential amino acids, it fuels your fitness journey with unparalleled strength and recovery support.',
     description:
@@ -38,8 +38,8 @@ const products = [
   {
     name: 'Weight gainer [brand]',
     image: '/images/dummy.webp',
-    image1: '/images/dummy.webp',
-    image2: '/images/dummy.webp',
+    image1: '/images/sample.jpg',
+    image2: '/images/mouse.jpg',
     shortdescription:
       'A specialized protein blend tailored to support weight gain and muscle mass development. Formulated with high-quality ingredients, it fuels intense workouts and promotes healthy weight gain for aspiring bodybuilders.',
     description:

@@ -1,0 +1,29 @@
+/** @format */
+
+.tabs {
+  width: 80%;
+  margin: 0 auto;
+}
+.tabs-nav {
+  display: flex;
+}
+.tabs-nav li {
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 15px 15px 0 0;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid var(--clr-dark-white);
+  }
+}
+
+ul.tabs-nav li.active {
+  border: 1px solid var(--clr-dark-white);
+}
+.outlet {
+  padding: 2rem 2rem 5rem 2rem;
+  border: 1px solid var(--clr-dark-white);
+}

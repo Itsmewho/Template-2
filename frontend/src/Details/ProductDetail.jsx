@@ -4,9 +4,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import Slider from '../components/Slider';
+import Tab from '../components/Tab';
 import '../styles/shop.css';
 
-function ProductDetail({ product }) {
+function ProductDetail() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import('locomotive-scroll')).default;
@@ -44,10 +45,12 @@ function ProductDetail({ product }) {
                 <Slider imageURLs={iamgeArry}></Slider>
               </div>
               <div className="product-description fs-400 ">
-                <p>{products.description}</p>
+                <p>{products.shortdescription}</p>
               </div>
             </div>
-            <div className="tabs-container"></div>
+            <div className="tabs-container">
+              <Tab products={products}></Tab>
+            </div>
           </div>
           <div className="right-product">
             <div className="sticky-card"></div>

@@ -58,16 +58,14 @@
   max-height: 500px;
   width: 350px;
 }
-.product-description{
+.product-description {
   width: 40ch;
   padding: 2rem;
-
 }
-.tabs-container{
-  border: 1px solid red;
+.tabs-container {
+  margin-top: 5rem;
   width: 100%;
 }
-
 
 /*--- right side ---*/
 
