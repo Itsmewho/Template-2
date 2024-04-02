@@ -23,3 +23,6 @@ note: Have made my own css styles(Like always). Only gsap for some animations.
 
 - Full blown MERN website build-up from the bottom up.
 - Project is getting out of hand :P XD
+
+
+DNF ( DID not finish )
