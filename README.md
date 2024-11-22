@@ -26,3 +26,6 @@ note: Have made my own css styles(Like always). Only gsap for some animations.
 
 
 DNF ( DID not finish )
+the shit with next.js and js in general I am going back to Python.
+probably come back or i don't.
+
